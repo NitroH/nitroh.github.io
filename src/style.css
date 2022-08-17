@@ -683,6 +683,168 @@ main .footer footer .bottom .social-media img {
   main .footer footer .top .navigation .explore, main .footer footer .top .navigation .blog, main .footer footer .top .navigation .other {
     display: none;
   }
+  main .footer footer .top .navigation div:not(:first-child), main .footer footer .top .navigation div:not(:nth-child(5)) {
+    padding-left: 15vw;
+  }
+  main .footer footer .top .navigation .opt img {
+    width: 14px;
+  }
+  main .footer footer .line {
+    margin-top: 20px;
+    width: 93vw;
+    height: 1px;
+    color: #383838;
+    background: #383838;
+  }
+  main .footer footer .bottom {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  main .footer footer .bottom .realise {
+    width: 290px;
+  }
+  main .footer footer .bottom .social-media {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    padding-left: 0;
+  }
+  main .footer footer .bottom .social-media img {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  main section.home h1 {
+    padding-top: 320px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+  }
+  main section.home h2 {
+    font-size: 20px;
+  }
+  main section.home p {
+    padding-top: 100px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 150px;
+    text-align: center;
+  }
+  main section.home .social-medias {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+  }
+  main section.home .social-medias .line {
+    display: none;
+  }
+  main section.about-me {
+    padding-top: 350px;
+  }
+  main section.about-me .text p {
+    font-size: 16px;
+    width: 500px;
+  }
+  main section.about-me .bg-static p {
+    top: 50px;
+    margin-left: 200px;
+    font-size: 100px;
+  }
+  main section.journey .journey {
+    padding-top: 300px;
+  }
+  main section.journey .journey ul .line {
+    width: 3px;
+    height: 350px;
+  }
+  main section.journey .journey ul .line .line2 {
+    width: 3px;
+    height: 70px;
+  }
+  main section.journey .journey ul li {
+    font-size: 16px;
+    padding: 22px 50px 23px 30px;
+  }
+  main section.journey .background p {
+    font-size: 100px;
+  }
+  main section.projects {
+    padding-top: 100px;
+  }
+  main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
+    zoom: 0.7;
+  }
+  main section.projects .background p {
+    font-size: 100px;
+  }
+  main section.skills .title {
+    margin: auto;
+    width: 500px;
+  }
+  main section.skills .title h4 {
+    font-size: 20px;
+  }
+  main section.skills .title p {
+    font-size: 12px;
+  }
+  main section.skills .offer .front-end, main section.skills .offer .back-end, main section.skills .offer .other {
+    zoom: 0.8;
+  }
+  main section.skills .background p {
+    font-size: 100px;
+  }
+  main section.contact {
+    padding-top: 100px;
+  }
+  main section.contact .title {
+    display: flex;
+    justify-content: center;
+  }
+  main section.contact .title p {
+    font-size: 12px;
+    width: 520px;
+  }
+  main section.contact form {
+    zoom: 0.8;
+  }
+  main section.contact .background p {
+    font-size: 100px;
+  }
+  main .footer {
+    display: flex;
+    justify-content: initial;
+    padding-left: 20px;
+  }
+  main .footer footer .top .title {
+    display: flex;
+    flex-direction: column;
+  }
+  main .footer footer .top .title h3 {
+    font-size: 28px;
+    line-height: 43px;
+  }
+  main .footer footer .top .title h3 span {
+    font-size: 26px;
+  }
+  main .footer footer .top .title .mail .icon {
+    margin-right: 10px;
+  }
+  main .footer footer .top .title .mail p {
+    font-size: 14px;
+  }
+  main .footer footer .top .navigation h6 {
+    font-size: 16px;
+  }
+  main .footer footer .top .navigation li {
+    font-size: 12px;
+  }
+  main .footer footer .top .navigation .explore, main .footer footer .top .navigation .blog, main .footer footer .top .navigation .other {
+    display: none;
+  }
+  main .footer footer .top .navigation div:not(:first-child), main .footer footer .top .navigation div:not(:nth-child(5)) {
+    padding-left: 15vw;
+  }
   main .footer footer .top .navigation .opt img {
     width: 14px;
   }

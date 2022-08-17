@@ -703,6 +703,35 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
   main{
     section.home{
@@ -898,6 +927,10 @@ main {
               display: none;
             }
 
+            div:not(:first-child), div:not(:nth-child(5)) {
+              padding-left: 15vw;
+            }
+
             .opt{
               img{
                 width: 14px;
@@ -923,6 +956,7 @@ main {
           .realise{
             width: 290px;
           }
+
           .social-media{
             display: flex;
             justify-content: flex-end;
@@ -935,10 +969,259 @@ main {
         }
       }
     }
+  }
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+  main{
+    section.home{
+      h1{
+        padding-top: 320px;
+        font-size: 100px;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      h2{
+        font-size: 20px;
+      }
+
+      p{
+        padding-top: 100px;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 150px;
+        text-align: center;
+      }
+
+      .social-medias{
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+
+        .line{
+          display: none;
+        }
+      }
+    }
+
+
+
+    section.about-me{
+      padding-top: 350px;
+      .text{
+        p{
+          font-size: 16px;
+          width: 500px;
+        }
+      }
+
+      .bg-static{
+        p{
+          top: 50px;
+          margin-left: 200px;
+          font-size: 100px;
+        }
+      }
+    }
+
+
+
+    section.journey{
+      .journey{
+        padding-top: 300px;
+        ul{
+          .line{
+            width: 3px;
+            height: 350px;
+            .line2{
+              width: 3px;
+              height: 70px;
+
+            }
+          }
+
+          li{
+            font-size: 16px;
+            padding: 22px 50px 23px 30px;
+          }
+        }
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 100px;
+        }
+      }
+    }
+
+
+
+    section.projects{
+      padding-top: 100px;
+
+      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+        zoom: 0.7;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 100px;
+        }
+      }
+    }
+
+
+
+    section.skills{
+      .title{
+        margin: auto;
+        width: 500px;
+        h4{
+          font-size: 20px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+
+      .offer{
+        .front-end, .back-end, .other{
+          zoom: 0.8;
+        }
+      }
+
+      .background{
+        p{
+          font-size: 100px;
+        }
+      }
+    }
+
+
+
+    section.contact{
+      padding-top: 100px;
+      .title{
+        display: flex;
+        justify-content: center;
+        p{
+          font-size: 12px;
+          width: 520px;
+        }
+      }
+
+      form{
+        zoom: 0.8;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 100px;
+        }
+      }
+    }
+
+
+
+    .footer{
+      display: flex;
+      justify-content: initial;
+      padding-left: 20px;
+
+      footer{
+        .top{
+          .title{
+            display: flex;
+            flex-direction: column;
+            h3{
+              font-size: 28px;
+              line-height: 43px;
+              span{
+                font-size: 26px;
+              }
+            }
+
+            .mail{
+              .icon{
+                margin-right: 10px;
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+
+          .navigation {
+            h6 {
+              font-size: 16px;
+            }
+            li {
+              font-size: 12px;
+            }
+
+            .explore, .blog, .other{
+              display: none;
+            }
+
+            div:not(:first-child), div:not(:nth-child(5)) {
+              padding-left: 15vw;
+            }
+
+            .opt{
+              img{
+                width: 14px;
+              }
+            }
+          }
+        }
+
+
+        .line{
+          margin-top: 20px;
+          width: 93vw;
+          height: 1px;
+          color: #383838;
+          background: #383838;
+        }
+
+
+        .bottom{
+          padding-top: 20px;
+          display: flex;
+          flex-direction: row;
+          .realise{
+            width: 290px;
+          }
+
+          .social-media{
+            display: flex;
+            justify-content: flex-end;
+            width: 200px;
+            padding-left: 0;
+            img{
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
   }
 }
