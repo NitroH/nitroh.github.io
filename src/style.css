@@ -1043,41 +1043,35 @@ main .footer footer .bottom .social-media img {
   main section.contact {
     padding-top: 100px;
   }
-  main section.contact .title {
-    display: flex;
-    justify-content: center;
-  }
   main section.contact .title p {
     font-size: 12px;
-    width: 415px;
+    width: 318px;
   }
   main section.contact form {
-    zoom: 0.65;
+    zoom: 0.5;
+  }
+  main section.contact form .field textarea {
+    width: 650px;
   }
   main section.contact .background p {
     font-size: 70px;
-  }
-  main .footer {
-    padding-top: 10px;
-    display: flex;
-    justify-content: initial;
-    padding-left: 20px;
   }
   main .footer footer .top .title {
     display: flex;
     flex-direction: column;
   }
   main .footer footer .top .title h3 {
-    font-size: 28px;
-    line-height: 43px;
+    font-size: 24px;
+    line-height: 30px;
   }
   main .footer footer .top .title h3 span {
-    font-size: 26px;
+    font-size: 20px;
   }
   main .footer footer .top .title .mail .icon {
     margin-right: 10px;
+    zoom: 0.8;
   }
-  main .footer footer .top .title .mail p {
+  main .footer footer .top .title .mail a {
     font-size: 12px;
   }
   main .footer footer .top .navigation h6 {
@@ -1086,7 +1080,7 @@ main .footer footer .bottom .social-media img {
   main .footer footer .top .navigation li {
     font-size: 12px;
   }
-  main .footer footer .top .navigation .explore, main .footer footer .top .navigation .blog, main .footer footer .top .navigation .other {
+  main .footer footer .top .navigation .explore, main .footer footer .top .navigation .blog, main .footer footer .top .navigation .other, main .footer footer .top .navigation .follow {
     display: none;
   }
   main .footer footer .top .navigation div:not(:first-child), main .footer footer .top .navigation div:not(:nth-child(5)) {
@@ -1108,12 +1102,14 @@ main .footer footer .bottom .social-media img {
     flex-direction: row;
   }
   main .footer footer .bottom .realise {
-    width: 290px;
+    width: 200px;
+  }
+  main .footer footer .bottom .realise p {
+    font-size: 12px;
   }
   main .footer footer .bottom .social-media {
-    display: flex;
-    justify-content: flex-end;
-    width: 200px;
+    zoom: 0.8;
+    width: 150px;
     padding-left: 0;
   }
   main .footer footer .bottom .social-media img {

@@ -1556,16 +1556,19 @@ main {
     section.contact{
       padding-top: 100px;
       .title{
-        display: flex;
-        justify-content: center;
         p{
           font-size: 12px;
-          width: 415px;
+          width: 318px;
         }
       }
 
       form{
-        zoom: 0.65;
+        zoom: 0.5;
+        .field{
+          textarea{
+            width: 650px;
+          }
+        }
       }
 
       .background{
@@ -1578,30 +1581,28 @@ main {
 
 
 
-    .footer{
-      padding-top: 10px;
-      display: flex;
-      justify-content: initial;
-      padding-left: 20px;
 
+    .footer{
       footer{
         .top{
           .title{
             display: flex;
             flex-direction: column;
             h3{
-              font-size: 28px;
-              line-height: 43px;
+              font-size: 24px;
+              line-height: 30px;
               span{
-                font-size: 26px;
+                font-size: 20px;
               }
             }
 
             .mail{
+
               .icon{
                 margin-right: 10px;
+                zoom: 0.8;
               }
-              p{
+              a{
                 font-size: 12px;
               }
             }
@@ -1615,7 +1616,7 @@ main {
               font-size: 12px;
             }
 
-            .explore, .blog, .other{
+            .explore, .blog, .other, .follow{
               display: none;
             }
 
@@ -1646,13 +1647,15 @@ main {
           display: flex;
           flex-direction: row;
           .realise{
-            width: 290px;
+            width: 200px;
+            p{
+              font-size: 12px;
+            }
           }
 
           .social-media{
-            display: flex;
-            justify-content: flex-end;
-            width: 200px;
+            zoom: 0.8;
+            width: 150px;
             padding-left: 0;
             img{
               padding-left: 15px;
