@@ -613,6 +613,9 @@ main .footer footer .bottom .social-media img {
   main section.projects {
     padding-top: 100px;
   }
+  main section.projects .break {
+    display: none;
+  }
   main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
     zoom: 0.7;
   }
@@ -718,59 +721,39 @@ main .footer footer .bottom .social-media img {
   main section.home h1 {
     padding-top: 320px;
     font-size: 100px;
-    text-align: center;
     line-height: 100px;
-  }
-  main section.home h2 {
-    font-size: 20px;
-  }
-  main section.home p {
-    padding-top: 100px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 150px;
-    text-align: center;
-  }
-  main section.home .social-medias {
-    position: absolute;
-    bottom: 0;
-    left: -50px;
-  }
-  main section.home .social-medias .line {
-    display: none;
-  }
-  main section.about-me {
-    padding-top: 350px;
-  }
-  main section.about-me .text p {
-    font-size: 16px;
-    width: 500px;
-  }
-  main section.about-me .bg-static p {
-    top: 50px;
-    margin-left: 200px;
-    font-size: 100px;
-  }
-  main section.journey .journey {
-    padding-top: 300px;
   }
   main section.journey .journey ul .line {
     width: 3px;
-    height: 350px;
+    height: 280px;
   }
   main section.journey .journey ul .line .line2 {
     width: 3px;
-    height: 70px;
+    height: 56px;
   }
   main section.journey .journey ul li {
+    font-size: 14px;
+    padding: 22px 25px 15px 25px;
+  }
+  main section.journey .journey .title h4 {
+    font-size: 20px;
+  }
+  main section.journey .journey .title h5 {
     font-size: 16px;
-    padding: 22px 50px 23px 30px;
+  }
+  main section.journey .journey .title p {
+    padding-top: 10px;
+    width: 300px;
+    font-size: 12px;
   }
   main section.journey .background p {
     font-size: 100px;
   }
   main section.projects {
     padding-top: 100px;
+  }
+  main section.projects .break {
+    display: none;
   }
   main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
     zoom: 0.7;

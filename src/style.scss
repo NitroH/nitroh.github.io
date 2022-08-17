@@ -821,6 +821,10 @@ main {
     section.projects{
       padding-top: 100px;
 
+      .break{
+        display: none;
+      }
+
       .avadress, .fil, .utopia, .alone, .nwh, .flower {
         zoom: 0.7;
       }
@@ -992,50 +996,7 @@ main {
       h1{
         padding-top: 320px;
         font-size: 100px;
-        text-align: center;
         line-height: 100px;
-      }
-
-      h2{
-        font-size: 20px;
-      }
-
-      p{
-        padding-top: 100px;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        font-size: 150px;
-        text-align: center;
-      }
-
-      .social-medias{
-        position: absolute;
-        bottom: 0;
-        left: -50px;
-
-        .line{
-          display: none;
-        }
-      }
-    }
-
-
-
-    section.about-me{
-      padding-top: 350px;
-      .text{
-        p{
-          font-size: 16px;
-          width: 500px;
-        }
-      }
-
-      .bg-static{
-        p{
-          top: 50px;
-          margin-left: 200px;
-          font-size: 100px;
-        }
       }
     }
 
@@ -1043,21 +1004,37 @@ main {
 
     section.journey{
       .journey{
-        padding-top: 300px;
         ul{
           .line{
             width: 3px;
-            height: 350px;
+            height: 280px;
+
             .line2{
               width: 3px;
-              height: 70px;
-
+              height: 56px;
             }
           }
 
           li{
+            font-size: 14px;
+            padding: 22px 25px 15px 25px;
+            //       top  right bottom left
+          }
+        }
+
+        .title{
+          h4{
+            font-size: 20px;
+          }
+
+          h5{
             font-size: 16px;
-            padding: 22px 50px 23px 30px;
+          }
+
+          p{
+            padding-top: 10px;
+            width: 300px;
+            font-size: 12px;
           }
         }
       }
@@ -1074,6 +1051,10 @@ main {
 
     section.projects{
       padding-top: 100px;
+
+      .break{
+        display: none;
+      }
 
       .avadress, .fil, .utopia, .alone, .nwh, .flower {
         zoom: 0.7;
