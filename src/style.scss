@@ -1465,26 +1465,61 @@ main {
           width: 300px;
         }
       }
-    }
 
-    section.journey{
-      .background{
+      .bg-static{
         p{
-          //font properties
-          font-size: 70px;
+          top: 85px;
+          margin-left: 200px;
+          font-size: 60px;
         }
       }
     }
 
-    section.projects{
-      .avadress, .fil, .utopia, .alone, .nwh, .flower {
-        zoom: 0.6;
+    section.journey{
+      .journey{
+        ul{
+          li{
+            font-size: 12px;
+            padding: 22px 20px 15px 20px;
+            //       top  right bottom left
+          }
+        }
+
+        .title{
+          h4{
+            font-size: 18px;
+          }
+
+          h5{
+            font-size: 14px;
+          }
+
+          p{
+            width: 180px;
+            font-size: 12px;
+          }
+        }
       }
 
       .background{
         p{
           //font properties
-          font-size: 70px;
+          font-size: 60px;
+        }
+      }
+    }
+
+
+
+    section.projects{
+      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+        zoom: 0.5;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 60px;
         }
       }
     }
@@ -1494,7 +1529,7 @@ main {
     section.skills{
       .title{
         margin: auto;
-        width: 410px;
+        width: 300px;
         h4{
           font-size: 20px;
         }
@@ -1505,7 +1540,7 @@ main {
 
       .offer{
         .front-end, .back-end, .other{
-          zoom: 0.7;
+          zoom: 0.55;
         }
       }
 

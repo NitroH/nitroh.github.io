@@ -996,18 +996,37 @@ main .footer footer .bottom .social-media img {
     font-size: 12px;
     width: 300px;
   }
+  main section.about-me .bg-static p {
+    top: 85px;
+    margin-left: 200px;
+    font-size: 60px;
+  }
+  main section.journey .journey ul li {
+    font-size: 12px;
+    padding: 22px 20px 15px 20px;
+  }
+  main section.journey .journey .title h4 {
+    font-size: 18px;
+  }
+  main section.journey .journey .title h5 {
+    font-size: 14px;
+  }
+  main section.journey .journey .title p {
+    width: 180px;
+    font-size: 12px;
+  }
   main section.journey .background p {
-    font-size: 70px;
+    font-size: 60px;
   }
   main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
-    zoom: 0.6;
+    zoom: 0.5;
   }
   main section.projects .background p {
-    font-size: 70px;
+    font-size: 60px;
   }
   main section.skills .title {
     margin: auto;
-    width: 410px;
+    width: 300px;
   }
   main section.skills .title h4 {
     font-size: 20px;
@@ -1016,7 +1035,7 @@ main .footer footer .bottom .social-media img {
     font-size: 12px;
   }
   main section.skills .offer .front-end, main section.skills .offer .back-end, main section.skills .offer .other {
-    zoom: 0.7;
+    zoom: 0.55;
   }
   main section.skills .background p {
     font-size: 70px;
