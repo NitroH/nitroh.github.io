@@ -473,89 +473,89 @@ main section.contact .background p {
   text-align: right;
   padding-top: 100px;
 }
-main .center {
+main .footer {
   display: flex;
   justify-content: center;
 }
-main .center footer .top {
+main .footer footer .top {
   display: flex;
   flex-direction: row;
 }
-main .center footer .top .title {
+main .footer footer .top .title {
   width: 176px;
 }
-main .center footer .top .title h3 {
+main .footer footer .top .title h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 32px;
   color: #383838;
   line-height: 43px;
 }
-main .center footer .top .title h3 span {
+main .footer footer .top .title h3 span {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 32px;
   color: #7e7e7e;
 }
-main .center footer .top .title .mail {
+main .footer footer .top .title .mail {
   padding-top: 20px;
   display: flex;
   flex-direction: row;
 }
-main .center footer .top .title .mail .icon {
+main .footer footer .top .title .mail .icon {
   margin-right: 10px;
 }
-main .center footer .top .title .mail p {
+main .footer footer .top .title .mail p {
   font-size: 14px;
 }
-main .center footer .top .navigation {
+main .footer footer .top .navigation {
   display: flex;
   flex-direction: row;
 }
-main .center footer .top .navigation div:not(:first-child), main .center footer .top .navigation div:not(:nth-child(5)) {
+main .footer footer .top .navigation div:not(:first-child), main .footer footer .top .navigation div:not(:nth-child(5)) {
   padding-left: 175px;
 }
-main .center footer .top .navigation h6 {
+main .footer footer .top .navigation h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
-main .center footer .top .navigation li {
+main .footer footer .top .navigation li {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #7E7E7E;
 }
-main .center footer .top .navigation .explore, main .center footer .top .navigation .follow, main .center footer .top .navigation .blog, main .center footer .top .navigation .other, main .center footer .top .navigation .opt {
+main .footer footer .top .navigation .explore, main .footer footer .top .navigation .follow, main .footer footer .top .navigation .blog, main .footer footer .top .navigation .other, main .footer footer .top .navigation .opt {
   display: flex;
   flex-direction: column;
 }
-main .center footer .top .navigation .opt img {
+main .footer footer .top .navigation .opt img {
   width: 14px;
 }
-main .center footer .line {
+main .footer footer .line {
   margin-top: 20px;
   width: 1584px;
   height: 1px;
   color: #383838;
   background: #383838;
 }
-main .center footer .bottom {
+main .footer footer .bottom {
   padding-top: 20px;
   display: flex;
   flex-direction: row;
 }
-main .center footer .bottom .realise span {
+main .footer footer .bottom .realise span {
   font-weight: 500;
   color: #383838;
 }
-main .center footer .bottom .social-media {
+main .footer footer .bottom .social-media {
   padding-left: 1135px;
 }
-main .center footer .bottom .social-media img {
+main .footer footer .bottom .social-media img {
   padding-left: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   main section.home h1 {
     padding-top: 350px;
     font-size: 135px;
@@ -615,13 +615,100 @@ main .center footer .bottom .social-media img {
   }
   main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
     zoom: 0.7;
-    width: 250px;
-    height: 250px;
-    margin-bottom: 80px;
-    margin-left: 80px;
   }
   main section.projects .background p {
     font-size: 100px;
+  }
+  main section.skills .title {
+    margin: auto;
+    width: 500px;
+  }
+  main section.skills .title h4 {
+    font-size: 20px;
+  }
+  main section.skills .title p {
+    font-size: 12px;
+  }
+  main section.skills .offer .front-end, main section.skills .offer .back-end, main section.skills .offer .other {
+    zoom: 0.8;
+  }
+  main section.skills .background p {
+    font-size: 100px;
+  }
+  main section.contact {
+    padding-top: 100px;
+  }
+  main section.contact .title {
+    display: flex;
+    justify-content: center;
+  }
+  main section.contact .title p {
+    font-size: 12px;
+    width: 520px;
+  }
+  main section.contact form {
+    zoom: 0.8;
+  }
+  main section.contact .background p {
+    font-size: 100px;
+  }
+  main .footer {
+    display: flex;
+    justify-content: initial;
+    padding-left: 20px;
+  }
+  main .footer footer .top .title {
+    display: flex;
+    flex-direction: column;
+  }
+  main .footer footer .top .title h3 {
+    font-size: 28px;
+    line-height: 43px;
+  }
+  main .footer footer .top .title h3 span {
+    font-size: 26px;
+  }
+  main .footer footer .top .title .mail .icon {
+    margin-right: 10px;
+  }
+  main .footer footer .top .title .mail p {
+    font-size: 14px;
+  }
+  main .footer footer .top .navigation h6 {
+    font-size: 16px;
+  }
+  main .footer footer .top .navigation li {
+    font-size: 12px;
+  }
+  main .footer footer .top .navigation .explore, main .footer footer .top .navigation .blog, main .footer footer .top .navigation .other {
+    display: none;
+  }
+  main .footer footer .top .navigation .opt img {
+    width: 14px;
+  }
+  main .footer footer .line {
+    margin-top: 20px;
+    width: 93vw;
+    height: 1px;
+    color: #383838;
+    background: #383838;
+  }
+  main .footer footer .bottom {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  main .footer footer .bottom .realise {
+    width: 290px;
+  }
+  main .footer footer .bottom .social-media {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    padding-left: 0;
+  }
+  main .footer footer .bottom .social-media img {
+    padding-left: 15px;
   }
 }
 

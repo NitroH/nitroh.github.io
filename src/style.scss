@@ -575,7 +575,7 @@ main {
   }
 
 
-  .center{
+  .footer{
     display: flex;
     justify-content: center;
 
@@ -679,7 +679,31 @@ main {
 
 
 
-@media screen and (max-width: 800px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
   main{
     section.home{
       h1{
@@ -765,24 +789,149 @@ main {
 
 
 
-
     section.projects{
       padding-top: 100px;
 
       .avadress, .fil, .utopia, .alone, .nwh, .flower {
         zoom: 0.7;
-        //style
-        width: 250px;
-        height: 250px;
-        //positioning
-        margin-bottom: 80px;
-        margin-left: 80px;
       }
 
       .background{
         p{
           //font properties
           font-size: 100px;
+        }
+      }
+    }
+
+
+
+    section.skills{
+      .title{
+        margin: auto;
+        width: 500px;
+        h4{
+          font-size: 20px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+
+      .offer{
+        .front-end, .back-end, .other{
+          zoom: 0.8;
+        }
+      }
+
+      .background{
+        p{
+          font-size: 100px;
+        }
+      }
+    }
+
+
+
+    section.contact{
+      padding-top: 100px;
+      .title{
+        display: flex;
+        justify-content: center;
+        p{
+          font-size: 12px;
+          width: 520px;
+        }
+      }
+
+      form{
+        zoom: 0.8;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 100px;
+        }
+      }
+    }
+
+
+
+    .footer{
+      display: flex;
+      justify-content: initial;
+      padding-left: 20px;
+
+      footer{
+        .top{
+          .title{
+            display: flex;
+            flex-direction: column;
+            h3{
+              font-size: 28px;
+              line-height: 43px;
+              span{
+                font-size: 26px;
+              }
+            }
+
+            .mail{
+              .icon{
+                margin-right: 10px;
+              }
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+
+          .navigation {
+            h6 {
+              font-size: 16px;
+            }
+            li {
+              font-size: 12px;
+            }
+
+            .explore, .blog, .other{
+              display: none ;
+            }
+
+            .opt{
+              img{
+                width: 14px;
+              }
+            }
+          }
+        }
+
+
+        .line{
+          margin-top: 20px;
+          width: 93vw;
+          height: 1px;
+          color: #383838;
+          background: #383838;
+        }
+
+
+        .bottom{
+          padding-top: 20px;
+          display: flex;
+          flex-direction: row;
+          .realise{
+            width: 290px;
+          }
+          .social-media{
+            display: flex;
+            justify-content: flex-end;
+            width: 200px;
+            padding-left: 0;
+            img{
+              padding-left: 15px;
+            }
+          }
         }
       }
     }
