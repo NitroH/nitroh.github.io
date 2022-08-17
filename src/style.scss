@@ -149,7 +149,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 0;
   scroll-behavior: smooth;
-  overflow-x: visible;
+  overflow-x: hidden;
   overflow-y: hidden;
   //background: linear-gradient(90deg, rgba(226,226,226,1) 0%, rgba(158,180,192,1) 100%);
   &,
@@ -1104,12 +1104,12 @@ main {
         justify-content: center;
         p{
           font-size: 12px;
-          width: 520px;
+          width: 450px;
         }
       }
 
       form{
-        zoom: 0.8;
+        zoom: 0.7;
       }
 
       .background{
@@ -1146,6 +1146,428 @@ main {
               }
               p{
                 font-size: 14px;
+              }
+            }
+          }
+
+          .navigation {
+            h6 {
+              font-size: 16px;
+            }
+            li {
+              font-size: 12px;
+            }
+
+            .explore, .blog, .other{
+              display: none;
+            }
+
+            div:not(:first-child), div:not(:nth-child(5)) {
+              padding-left: 15vw;
+            }
+
+            .opt{
+              img{
+                width: 14px;
+              }
+            }
+          }
+        }
+
+
+        .line{
+          margin-top: 20px;
+          width: 93vw;
+          height: 1px;
+          color: #383838;
+          background: #383838;
+        }
+
+
+        .bottom{
+          padding-top: 20px;
+          display: flex;
+          flex-direction: row;
+          .realise{
+            width: 290px;
+          }
+
+          .social-media{
+            display: flex;
+            justify-content: flex-end;
+            width: 200px;
+            padding-left: 0;
+            img{
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 535px) {
+  main{
+    .footer{
+      footer{
+        .bottom{
+          .social-media{
+            width: 170px;
+            zoom: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 515px) {
+  main{
+    section.about-me{
+      padding-top: 350px;
+      .text{
+        p{
+          font-size: 14px;
+          width: 450px;
+        }
+      }
+
+      .bg-static{
+        p{
+          top: 85px;
+          margin-left: 200px;
+          font-size: 70px;
+        }
+      }
+    }
+
+    section.journey{
+      .background{
+        p{
+          //font properties
+          font-size: 70px;
+        }
+      }
+    }
+
+    section.projects{
+      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+        zoom: 0.6;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 70px;
+        }
+      }
+    }
+
+
+
+    section.skills{
+      .title{
+        margin: auto;
+        width: 410px;
+        h4{
+          font-size: 20px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+
+      .offer{
+        .front-end, .back-end, .other{
+          zoom: 0.7;
+        }
+      }
+
+      .background{
+        p{
+          font-size: 70px;
+        }
+      }
+    }
+
+
+
+    section.contact{
+      padding-top: 100px;
+      .title{
+        display: flex;
+        justify-content: center;
+        p{
+          font-size: 12px;
+          width: 415px;
+        }
+      }
+
+      form{
+        zoom: 0.65;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 70px;
+        }
+      }
+    }
+
+
+
+    .footer{
+      padding-top: 10px;
+      display: flex;
+      justify-content: initial;
+      padding-left: 20px;
+
+      footer{
+        .top{
+          .title{
+            display: flex;
+            flex-direction: column;
+            h3{
+              font-size: 28px;
+              line-height: 43px;
+              span{
+                font-size: 26px;
+              }
+            }
+
+            .mail{
+              .icon{
+                margin-right: 10px;
+              }
+              p{
+                font-size: 12px;
+              }
+            }
+          }
+
+          .navigation {
+            h6 {
+              font-size: 16px;
+            }
+            li {
+              font-size: 12px;
+            }
+
+            .explore, .blog, .other{
+              display: none;
+            }
+
+            div:not(:first-child), div:not(:nth-child(5)) {
+              padding-left: 15vw;
+            }
+
+            .opt{
+              img{
+                width: 14px;
+              }
+            }
+          }
+        }
+
+
+        .line{
+          margin-top: 20px;
+          width: 93vw;
+          height: 1px;
+          color: #383838;
+          background: #383838;
+        }
+
+
+        .bottom{
+          padding-top: 20px;
+          display: flex;
+          flex-direction: row;
+          .realise{
+            width: 290px;
+          }
+
+          .social-media{
+            display: flex;
+            justify-content: flex-end;
+            width: 200px;
+            padding-left: 0;
+            img{
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 515px) {
+  main{
+    section.home{
+      h1{
+        padding-top: 350px;
+        font-size: 80px;
+        line-height: 85px;
+      }
+
+      h2{
+        font-size: 16px;
+      }
+    }
+
+
+
+    section.about-me{
+      padding-top: 350px;
+      .text{
+        p{
+          font-size: 12px;
+          width: 300px;
+        }
+      }
+    }
+
+    section.journey{
+      .background{
+        p{
+          //font properties
+          font-size: 70px;
+        }
+      }
+    }
+
+    section.projects{
+      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+        zoom: 0.6;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 70px;
+        }
+      }
+    }
+
+
+
+    section.skills{
+      .title{
+        margin: auto;
+        width: 410px;
+        h4{
+          font-size: 20px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+
+      .offer{
+        .front-end, .back-end, .other{
+          zoom: 0.7;
+        }
+      }
+
+      .background{
+        p{
+          font-size: 70px;
+        }
+      }
+    }
+
+
+
+    section.contact{
+      padding-top: 100px;
+      .title{
+        display: flex;
+        justify-content: center;
+        p{
+          font-size: 12px;
+          width: 415px;
+        }
+      }
+
+      form{
+        zoom: 0.65;
+      }
+
+      .background{
+        p{
+          //font properties
+          font-size: 70px;
+        }
+      }
+    }
+
+
+
+    .footer{
+      padding-top: 10px;
+      display: flex;
+      justify-content: initial;
+      padding-left: 20px;
+
+      footer{
+        .top{
+          .title{
+            display: flex;
+            flex-direction: column;
+            h3{
+              font-size: 28px;
+              line-height: 43px;
+              span{
+                font-size: 26px;
+              }
+            }
+
+            .mail{
+              .icon{
+                margin-right: 10px;
+              }
+              p{
+                font-size: 12px;
               }
             }
           }
