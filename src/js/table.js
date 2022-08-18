@@ -5,9 +5,12 @@ const studies = document.querySelector('.nav-journey :nth-child(5)');
 const job = document.querySelector('.nav-journey :nth-child(6)');
 const text = document.querySelector('.txt-journey');
 const line = document.querySelector('.line2');
+const title = document.querySelector('.title-journey');
+const date = document.querySelector('.date');
+
 
 formation.onclick = function() {
-    text.innerHTML = "> For the moment, I've didn't do any formations because I always find what I need in Internet, but, in the future, I'll listen formations to learn many things arround computer sciences and programmation";
+    text.innerHTML = "> For the moment, I've didn't do any professional formations because I always find what I need in Internet. But, I listen podcast , I read programming book and I also do online lessons.";
     document.querySelector('.line2').style.marginTop = "0px";
     formation.style.fontWeight = "500";
     formation.style.color = "#383838";
