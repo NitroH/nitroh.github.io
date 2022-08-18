@@ -10,14 +10,14 @@ const date = document.querySelector('.date');
 
 
 formation.onclick = function() {
-    text.innerHTML = "> For the moment, I've didn't do any professional formations because I always find what I need in Internet. But, I listen podcast , I read programming book and I also do online lessons.";
+    text.innerHTML = "> For the moment, I didn't do any professional formations because I always find what I need in Internet. But, I listen podcast , I read programming book and I also do online lessons.";
     document.querySelector('.line2').style.marginTop = "0px";
     formation.style.fontWeight = "500";
     formation.style.color = "#383838";
 };
 
 middle.onclick = function() {
-    text.innerHTML = "> I’ve starting programming when I was in middle school. I’ve learned HTML, CSS, JavaScript, React, PHP, SQL...<br> > When I was little, I was already interested about technologies.I always played video games. But a day, my friend who was in middle school says me what he did in maths lesson, and after that, I started programing.";
+    text.innerHTML = "> Actually in middle school. I learn a lot about HTML, CSS, JavaScript, React, Node JS";
     document.querySelector('.line2').style.marginTop = "70px";
     middle.style.fontWeight = "500";
     middle.style.color = "#383838";
