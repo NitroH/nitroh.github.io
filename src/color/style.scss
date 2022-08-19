@@ -371,27 +371,27 @@ main {
       display: flex;
       justify-content: center;
 
-      img{
-        margin: auto;
-      }
-
-      .title{
-        //style
-        width: 250px;
-        height: 50px;
-        background: rgba(255, 255, 255, 0.12);
-        border-radius: 0px 0px 8px 8px;
-        //centering
-        display: flex;
-        align-items: flex-start;
-        //positioning
-        position: absolute;
-        margin-top: 200px;
-        h4{
+        img{
           margin: auto;
-          color: #000;
         }
-      }
+
+        .title{
+          //style
+          width: 250px;
+          height: 50px;
+          background: rgba(255, 255, 255, 0.12);
+          border-radius: 0px 0px 8px 8px;
+          //centering
+          display: flex;
+          align-items: flex-start;
+          //positioning
+          position: absolute;
+          margin-top: 200px;
+          h4{
+            margin: auto;
+            color: #000;
+          }
+        }
     }
 
     .fil{
@@ -628,6 +628,10 @@ main {
             font-family: $pop;
             font-size: 14px;
             color: #7E7E7E;
+          }
+
+          li:hover{
+            cursor: pointer;
           }
           .explore, .follow, .blog, .other, .opt {
             display: flex;
