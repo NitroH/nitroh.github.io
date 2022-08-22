@@ -1,0 +1,523 @@
+/*---------------------------------------------------------
+FONT
+---------------------------------------------------------*/
+@font-face {
+    font-family: "monsterrat";
+    src: url("./assets/font/montserrat/Montserrat-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "monsterrat-bold";
+    src: url("./assets/font/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  }
+/*---------------------------------------------------------
+Sroll Bar
+---------------------------------------------------------*/
+body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #eeeeee; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #333333; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #eeeeee; /* creates padding around scroll thumb */
+  }
+/*---------------------------------------------------------
+BODY/HTML
+---------------------------------------------------------*/
+html{
+    font-size: 25px;
+    font-family: "monsterrat";
+    background-color: #1a1a1a;
+    color: #fff;
+}
+body{
+    color: #333333;
+    margin: 0%;
+    font-size: 25px;
+    font-family: "monsterrat";
+    background-color: #1a1a1a;
+    height: 4250px;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: "monsterrat-bold";
+}
+* {
+    color: #fff;
+    font-family: "monsterrat";
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+h4{
+    font-size: 35px;
+}
+/*---------------------------------------------------------
+NAV
+---------------------------------------------------------*/
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+[role=navigation]{
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 111;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #494949;
+  transition: color 0.3s ease;
+}
+#menuToggle a:hover
+{
+  color: tomato;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #2AD4FF;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #2AD4FF;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 100px;
+  padding-top: 125px;
+  
+  background: #494949;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+#menuToggle{
+    position: fixed;
+}
+.logo{
+    transform: scale(0.4);
+    padding: 20px 20px;
+    position: relative;
+    left: 20px;
+    top: -26px;
+    position: fixed;
+    z-index: 111;
+}
+/*---------------------------------------------------------
+HOME
+---------------------------------------------------------*/
+.home{
+    align-content: center;
+    text-align: center;
+}
+.home_logo{
+    width: 500px;
+    height: 300px;
+    margin-top: 20vh;
+    align-content: center;
+    text-align: center;
+}
+.txt-but{
+    margin-top: 25vh;
+}
+.home_txt{
+    position: absolute relative;
+    margin: auto;
+    margin-top: -8rem;
+    font-size: 35px;
+    font-weight: 600;
+}
+.home_button{
+    margin: auto;
+    margin-top: 11vh;
+    width: 528px;
+    height: 106px;
+    background: #494949;
+    border-radius: 30px;
+    position: absolute relative;
+}
+.home_ensv{
+    color: #2AD4FF;
+    margin-top: 30px;
+    margin-left: -230px;
+    font-size: 30px;
+    position: absolute;
+}
+/*---------------------------------------------------------
+GAMES
+---------------------------------------------------------*/
+.games{
+    position: absolute relative;
+    margin-top: 300px;
+
+}
+.games_tit{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+.games_scroll{
+    position: relative;
+    margin: auto;
+    margin-left: 3vw;
+}
+.scroll{
+    width: max-content;
+    height: max-content;
+}
+.square{
+    display: flex;
+    align-items: center;
+    width: 500vw;
+    height: 50vh;
+}
+.square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8, .square9, .square10, .square11, .square12, .square13, .square14, .square15, .square16, .square17, .square18, .square19, .square20{
+    width: 15vw;
+    height: 35vh;
+    background: #2AD4FF;
+    margin: auto;
+}
+.games_tit_section{
+    margin-top: 450px;
+    margin-left: -480px;
+    position: relative;
+}
+.games_ensv{
+    color: #2AD4FF;
+    margin-top: 30px;
+    margin-left: 2vw;
+    font-size: 30px;
+    position: absolute;
+}
+.games_button{
+    margin: auto;
+    margin-top: 15vh;
+    width: 528px;
+    height: 106px;
+    background: #494949;
+    border-radius: 30px;
+    position: absolute relative;
+}
+/*---------------------------------------------------------
+ACTU
+---------------------------------------------------------*/
+.actu{
+    align-content: center;
+    text-align: center;
+}
+.actu_title1{
+    margin-left: -38vw;
+    margin-top: 200px;
+}
+.actu_square{
+    margin-top: 5vh;
+}
+.actu_square1{
+    position: relative;
+    margin: auto;
+    width: 22vw;
+    height: 291px;
+    background-color: #2AD4FF;
+    border-radius: 30px;
+    left: -15vw;
+}
+.actu_square_txt1{
+    width: 22vw;
+    left: 0vw;
+    margin-top: 30px;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
+}
+.actu_square2{
+    position: relative;
+    margin: auto;
+    left: 15vw;
+    margin-top: -290px;
+    width: 22vw;
+    height: 291px;
+    background-color: #2AD4FF;
+    border-radius: 30px;
+}
+.actu_square_txt2{
+    width: 22vw;
+    left: 0vw;
+    margin-top: 25px;
+    position: absolute;
+    text-align: center;
+    align-content: center;    
+}
+.actu_square3{
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 52vw;
+    height: 291px;
+    background-color: #2AD4FF;
+    border-radius: 30px;
+}
+.actu_ensv{
+    color: #2AD4FF;
+    margin-top: 30px;
+    margin-left: -230px;
+    font-size: 30px;
+    position: absolute;
+}
+.actu_button{
+    margin: auto;
+    margin-top: 4%;
+    width: 528px;
+    height: 106px;
+    background: #494949;
+    border-radius: 30px;
+    position: absolute relative;
+}
+/*---------------------------------------------------------
+FORM
+---------------------------------------------------------*/
+.form{
+    margin-top: 200px;
+    align-content: center;
+    text-align: center;
+}
+.form_title1{
+    position: absolute relative;
+    margin: auto;
+}
+.form_square{
+    margin-top: 5vh;
+}
+.form_square1{
+    margin-left: 22.5vw;
+    position: absolute relative;
+    width: 506px;
+    height: 77px;
+    background: #494949;
+    border-radius: 15px;
+}
+.form_but_txt1{
+    left: 32vw;
+    margin-top: 20px;
+    font-size: 35px;
+    position: absolute;
+}
+.form_square2{
+    margin-left: 22.5vw;
+    position: absolute relative;
+    width: 506px;
+    height: 77px;
+    background: #494949;
+    border-radius: 15px;
+}
+.form_but_txt2{
+    margin-top: 20px;
+    font-size: 35px;
+    position: absolute;
+    left: 24vw;
+}
+.form_square3{
+    margin-left: 22vw;
+    position: absolute relative;
+    width: 250px;
+    height: 77px;
+    background: #2AD4FF;
+    border-radius: 422px;
+}
+.form_but_txt3{
+    margin-top: 15px;
+    font-size: 35px;
+    position: absolute;
+    left: 24.5vw;
+}
+.form_txt{
+    width: 693px;
+    text-align: left;
+    margin-left: 55vw;
+    position: absolute relative;
+    margin-top: -28vh;
+}
+/*---------------------------------------------------------
+FOOTER
+---------------------------------------------------------*/
+.footer{
+    margin-top: 350px;
+}
+.footer_logo{
+    height: 121px;
+    margin-left: 15.5vw;
+}
+.footer_txt1{
+    left: 40vw;
+    margin-top: -8vh;
+    word-spacing: 100px;
+    position: absolute;
+}
+.footer_hr{
+    top: 5vh;
+    width: 1520px;
+    height: 1px;
+    color: #fff;
+    background: #494949;
+    position: relative;
+    margin: auto;
+}
+.footer_copy{
+    color: #2AD4FF;
+    position: relative;
+    top: 10vh;
+    left: 71.3vw;
+}
+.footer_real{
+    color: #2AD4FF;
+    position: relative;
+    top: 12vh;
+    left: 71.3vw;
+}
+.footer_logo1{
+    top: 3vh;
+    margin-left: 15.5vw;
+    position: relative;
+    word-spacing: 200px;
+    display: flex;
+    align-items: center;
+}
+.footer_discord{
+    width: 100px;
+    margin-right: 200px;
+    filter: brightness(0%) invert(100%);
+}
+.footer_mail{
+    width: 100px;
+    filter: brightness(0%) invert(100%);
+}
+
+
+@media (max-width: 600px){
+    marquee{width: 300px; align-content: center;text-align: center;}
+    h1{font-size:35px;}
+    h4{font-size:15px;margin: 30px;}
+    body{font-size: 15px;height: 3200px;}
+    html{font-size: 15px;}
+    .home_logo{transform: scale(0.7);}
+    .home_txt{margin-top: -20vh; font-size: 25px;}
+    .home_button{margin-top: 15vh; transform: scale(0.8);}
+    .games{margin-top: 100px;}
+    .square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8, .square9, .square10, .square11, .square12, .square13, .square14, .square15, .square16, .square17, .square18, .square19, .square20{
+    height: 13vh;}
+    .games_tit_section{transform: scale(0.9);margin-top: 250px;margin-left: -650px;}
+    .games_button{transform: scale(0.55);margin-left: -20vw;}
+    .games_ensv{left: 30px;width: max-content;}
+    .actu{margin-top: 100px;}
+    .actu_square_tit{position: absolute relative; margin: auto;font-size: 20px;}
+    .actu_square_txt1{font-size: 13px;margin-top: 25px;margin-left: 18px;}
+    .actu_square_txt2{font-size: 13px;margin-top: 25px;margin-left: 18px;}
+    .actu_button{transform: scale(0.55);margin-left: -20vw;}
+    .actu_square1, .actu_square2{width: 32vw; height: 22vh;}
+    .actu_square1{left: -70px;}
+    .actu_square2{margin-top: -180px;left: 70px;}
+    .actu_square3{width: 72vw; height: 52vw;}
+    .form{margin-top: 15vh;align-content: center;text-align: center;position: absolute relative;}
+    .form_title1{text-align: center;align-content: center;}
+    .form_square{margin-left: -70px; position: absolute relative;}
+    .form_square1{transform: scale(0.8);width: 90vw;}
+    .form_but_txt1{transform: scale(0.5);}
+    .form_square2{transform: scale(0.8);width: 90vw;}
+    .form_but_txt2{transform: scale(0.5);width: max-content;left: -13vw;}
+    .form_square3{transform: scale(0.8);width: 90vw;}
+    .form_but_txt3{transform: scale(0.5);}
+    .form_txt{margin-top: 10vh;margin-left: 50px;width: 80vw;}
+    .footer{margin-top: 30vh;}
+    .footer_logo{align-content: center; text-align: center;margin-left: 80px; margin-top: -23vh; position: absolute;transform: scale(1);}
+    .footer_txt1{word-spacing: 0px;margin-left: -27vw; margin-top: -20px;width: max-content;word-spacing: 10px;}
+    .footer_hr{width: 70vw;}
+    .footer_copy{margin-left: -35vw;font-size: 13px;}
+    .footer_real{margin-left: -35vw;font-size: 13px;}
+    .footer_discord{width: 65px; position: absolute;margin-left: -8px;}
+    .footer_mail{width: 50px; margin-top: 50px; position: absolute;}
+}
+@media (max-width: 400px){
+    .home_txt{font-size: 20px;margin-top: -200px;}
+    .home_logo{transform: scale(0.5);margin-left: -15vw;}
+    .home_button{transform: scale(0.55);margin-left: -20vw;}
+}

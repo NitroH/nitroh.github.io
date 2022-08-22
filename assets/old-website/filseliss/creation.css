@@ -1,0 +1,258 @@
+/*------------------------------------------------------------
+
+Project:	Filselisse Portfolio
+Version:	1.0
+Date: 01/12/2021
+
+==== TABLE OF CONTENTS ====
+
+1.0 - General Styles
+2.0 - Home
+3.0 - Creation
+4.0 - Learn more
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - General Styles
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Altone-Bold';
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+h1 {
+  font-size: 68px;
+  line-height: 67px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 18px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 14px;
+}
+p {
+  font-family: 'Altone';
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  font-size: 12px;
+  line-height: 24px;
+}
+a,
+span {
+  font-family: 'Altone';
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+button {
+  font-family: altone-bold;
+  font-size: 24px;
+  padding: 25px;
+  background: #91CFC9;
+  border: none;
+  position: relative;
+  top: 400px;
+  left: 10vw;
+}
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+li{
+  list-style-type: none;
+  list-style: none;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+html,
+body {
+  position: relative;
+  background: #E8EDEC;
+}
+::selection{
+  color: #fff;
+  background: #91CFC9;
+}
+@font-face {
+  font-family: "Altone";
+  src: url("./assets/font/AltoneTrial-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Altone-Bold";
+  src: url("./assets/font/AltoneTrial-Bold.ttf") format("truetype");
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 50px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #979797;
+}
+/*--------------------------------------------------------------
+2.0 - Home
+--------------------------------------------------------------*/
+ul{
+  position: relative;
+  display: flex;
+  align-content: right;
+  justify-content: right;
+  right: -8px;
+}
+
+li > a{
+  position: relative;
+  padding: 75px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #91CFC9;
+  top: 56px;
+}
+a:hover{
+  background: #16d0bf;
+}
+
+.header-logo{
+  position: absolute;
+  background: none;
+  top: -35px;
+  left: 5vw;
+}
+
+.contact{
+  padding-right: 250px;
+}
+/*--------------------------------------------------------------
+3.0 - Creation
+--------------------------------------------------------------*/
+.creation > h1{
+  text-align: center;
+  margin-top: 500px;
+
+}
+
+.home > button {
+  font-family: altone-bold;
+  font-size: 24px;
+  padding: 25px;
+  background: #91CFC9;
+  border: none;
+  position: relative;
+  top: 400px;
+  left: 10vw;
+}
+
+.creation{
+  margin-top: -320px;  
+}
+
+.creation > h1 {
+  text-align: center;
+}
+
+.sfd{
+  position: absolute;
+  left: 10vw;
+  top: 35vh;
+}
+
+.sfd > h2 {
+  color: #fff;
+  position: relative;
+  top: 425px;
+  text-align: center;
+}
+
+.elpis{
+  position: absolute;
+  left: 57vw;
+  top: 35vh;
+}
+
+.elpis > h2 {
+  color: #fff;
+  position: relative;
+  top: 425px;
+  text-align: center;
+}
+
+.ltdd{
+  position: absolute;
+  left: 10vw;
+  top: 850px;
+}
+
+.ltdd > h2{
+  color: #fff;
+  position: relative;
+  top: 425px;
+  text-align: center;
+}
+
+.club{
+  position: absolute;
+  left: 42.5vw;
+  top: 850px;
+}
+
+.club > h2{
+  color: #fff;
+  position: relative;
+  top: 425px;
+  text-align: center;
+}
+
+.byg{
+  position: absolute;
+  left: 10vw;
+  top: 1400px;
+}
+
+.byg > h2{
+  color: #fff;
+  position: relative;
+  top: 425px;
+  text-align: center;
+}
+
+.logo{
+  position: absolute;
+  left: 64vw;
+  top: 1400px;
+}
+
+.logo > h2{
+  color: #fff;
+  position: relative;
+  top: 425px;
+  text-align: center;
+}

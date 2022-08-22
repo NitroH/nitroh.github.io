@@ -76,7 +76,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  color: #383838;
+  color: #ffffff;
 }
 
 h1 {
@@ -108,7 +108,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #383838;
+  color: #eeeeee;
   font-size: 18px;
 }
 
@@ -121,7 +121,7 @@ a, a:focus, a:active, span {
 }
 
 a:hover {
-  color: #383838;
+  color: #2E2E2E;
   transition-duration: 0.2s;
   font-weight: 500;
 }
@@ -132,16 +132,16 @@ ul {
 
 /* Selection */
 ::selection {
-  color: #383838;
+  color: #2E2E2E;
   background: #f6f6f6;
 }
 
 html,
 body {
-  background: black;
+  background-color: #1A1A1A;
   width: 100%;
   height: 100%;
-  color: #383838;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-weight: 0;
   scroll-behavior: smooth;
@@ -177,7 +177,7 @@ main section.home h2 {
   font-size: 35px;
   text-align: center;
 }
-main section.home p {
+main section.home .background p {
   font-size: 500px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -188,13 +188,13 @@ main section.home p {
   top: 400px;
   z-index: -1;
   left: 50%;
-  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 main section.home .social-medias {
   padding-top: 145px;
   padding-left: 95px;
   display: flex;
   flex-direction: column;
+  filter: brightness(0) invert(1);
 }
 main section.home .social-medias .icon div {
   padding-bottom: 20px;
@@ -202,7 +202,7 @@ main section.home .social-medias .icon div {
 main section.home .social-medias .line {
   width: 2px;
   height: 90px;
-  background-color: #383838;
+  background-color: #FFFFFF;
   align-content: center;
   text-align: center;
   margin-left: 10px;
@@ -212,7 +212,7 @@ main section.about-me .text p {
   font-size: 32px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  color: #383838;
+  color: #FFFFFF;
   padding-top: 300px;
   width: 1450px;
   margin: auto;
@@ -222,7 +222,7 @@ main section.about-me .bg-static p {
   font-size: 300px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  color: #EEEEEE;
+  color: #2E2E2E;
   white-space: nowrap;
   position: relative;
   z-index: -11;
@@ -241,48 +241,48 @@ main section.journey .journey ul {
 main section.journey .journey ul .line {
   width: 3px;
   height: 350px;
-  background: #EEE;
+  background: #7e7e7e;
   position: absolute;
 }
 main section.journey .journey ul .line .line2 {
   width: 3px;
   height: 70px;
-  background: #383838;
+  background: #ffffff;
   position: absolute;
 }
 main section.journey .journey ul li {
   font-size: 16px;
   font-weight: 400;
-  color: #7E7E7E;
+  color: #ffffff;
   padding: 22px 65px 23px 30px;
 }
 main section.journey .journey ul li:hover {
   cursor: pointer;
-  color: #585858;
+  color: #ffffff;
   font-weight: 500;
 }
 main section.journey .journey .title h4 {
   font-size: 22px;
   font-weight: 500;
-  color: #383838;
+  color: #ffffff;
 }
 main section.journey .journey .title h5 {
   font-size: 18px;
   font-weight: 400;
-  color: #585858;
+  color: #D0D0D0;
 }
 main section.journey .journey .title p {
   padding-top: 10px;
   width: 349px;
   font-size: 14px;
   font-weight: 400;
-  color: #7b7b7b;
+  color: #B0B0B0;
 }
 main section.journey .background p {
   font-size: 300px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  color: #EEEEEE;
+  color: #2E2E2E;
   white-space: nowrap;
   text-align: right;
   padding-top: 100px;
@@ -348,7 +348,7 @@ main section.projects .background p {
   font-size: 300px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  color: #EEEEEE;
+  color: #2E2E2E;
   white-space: nowrap;
   text-align: right;
 }
@@ -361,7 +361,7 @@ main section.skills .title {
 }
 main section.skills .title p {
   font-size: 14px;
-  color: #7E7E7E;
+  color: #D0D0D0;
 }
 main section.skills .offer {
   display: flex;
@@ -373,7 +373,7 @@ main section.skills .offer .back-end, main section.skills .offer .other {
   margin-left: 50px;
 }
 main section.skills .offer .front-end h4, main section.skills .offer .back-end h4, main section.skills .offer .other h4 {
-  background: #EEEEEE;
+  background: #2e2e2e;
   box-shadow: 0 0 14px -3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 125px;
@@ -384,7 +384,7 @@ main section.skills .offer .front-end h4, main section.skills .offer .back-end h
   margin-top: -17px;
 }
 main section.skills .offer .front-end .box, main section.skills .offer .back-end .box, main section.skills .offer .other .box {
-  background: #F9F9F9;
+  background: #2e2e2e;
   border-radius: 8px;
   width: 170px;
   height: 250px;
@@ -393,14 +393,14 @@ main section.skills .offer .front-end .box p, main section.skills .offer .back-e
   text-align: left;
   padding-left: 20px;
   padding-top: 30px;
-  color: #7e7e7e;
+  color: #B0B0B0;
   font-size: 16px;
 }
 main section.skills .background p {
   font-size: 300px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  color: #EEEEEE;
+  color: #2E2E2E;
   white-space: nowrap;
   text-align: right;
   padding-top: 100px;
@@ -415,6 +415,7 @@ main section.contact .title {
 main section.contact .title p {
   font-size: 18px;
   width: 650px;
+  color: #B0B0B0;
 }
 main section.contact form {
   display: flex;
@@ -434,7 +435,7 @@ main section.contact .field input {
   border-radius: 10px;
   width: 315px;
   height: 58px;
-  background: #F9F9F9;
+  background: #2E2E2E;
   padding-left: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -445,7 +446,7 @@ main section.contact .field textarea {
   width: 650px;
   height: 200px;
   border-radius: 10px;
-  background: #F9F9F9;
+  background: #2E2E2E;
   padding-left: 20px;
   padding-top: 20px;
   font-family: "Poppins", sans-serif;
@@ -469,7 +470,7 @@ main section.contact .background p {
   font-size: 300px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  color: #EEEEEE;
+  color: #2E2E2E;
   white-space: nowrap;
   text-align: right;
   padding-top: 100px;
@@ -489,7 +490,7 @@ main .footer footer .top .title h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 32px;
-  color: #383838;
+  color: #FFFFFF;
   line-height: 43px;
 }
 main .footer footer .top .title h3 span {
@@ -524,7 +525,10 @@ main .footer footer .top .navigation h6 {
 main .footer footer .top .navigation li {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #7E7E7E;
+  color: #b0b0b0;
+}
+main .footer footer .top .navigation li:hover {
+  cursor: pointer;
 }
 main .footer footer .top .navigation .explore, main .footer footer .top .navigation .follow, main .footer footer .top .navigation .blog, main .footer footer .top .navigation .other, main .footer footer .top .navigation .opt {
   display: flex;
@@ -537,8 +541,8 @@ main .footer footer .line {
   margin-top: 20px;
   width: 1584px;
   height: 1px;
-  color: #383838;
-  background: #383838;
+  color: #2E2E2E;
+  background: #2E2E2E;
 }
 main .footer footer .bottom {
   padding-top: 20px;
@@ -547,9 +551,10 @@ main .footer footer .bottom {
 }
 main .footer footer .bottom .realise span {
   font-weight: 500;
-  color: #383838;
+  color: #7e7e7e;
 }
 main .footer footer .bottom .social-media {
+  filter: brightness(0) invert(1);
   padding-left: 1135px;
 }
 main .footer footer .bottom .social-media img {
@@ -697,8 +702,8 @@ main .footer footer .bottom .social-media img {
     margin-top: 20px;
     width: 93vw;
     height: 1px;
-    color: #383838;
-    background: #383838;
+    color: #2E2E2E;
+    background: #2E2E2E;
   }
   main .footer footer .bottom {
     padding-top: 20px;
@@ -836,8 +841,8 @@ main .footer footer .bottom .social-media img {
     margin-top: 20px;
     width: 93vw;
     height: 1px;
-    color: #383838;
-    background: #383838;
+    color: #2E2E2E;
+    background: #2E2E2E;
   }
   main .footer footer .bottom {
     padding-top: 20px;
@@ -960,8 +965,8 @@ main .footer footer .bottom .social-media img {
     margin-top: 20px;
     width: 93vw;
     height: 1px;
-    color: #383838;
-    background: #383838;
+    color: #2E2E2E;
+    background: #2E2E2E;
   }
   main .footer footer .bottom {
     padding-top: 20px;
@@ -1094,8 +1099,8 @@ main .footer footer .bottom .social-media img {
     margin-top: 20px;
     width: 93vw;
     height: 1px;
-    color: #383838;
-    background: #383838;
+    color: #2E2E2E;
+    background: #2E2E2E;
   }
   main .footer footer .bottom {
     padding-top: 20px;

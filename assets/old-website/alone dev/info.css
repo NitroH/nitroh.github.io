@@ -1,0 +1,340 @@
+/*---------------------------------------------------------
+FONT
+---------------------------------------------------------*/
+@font-face {
+    font-family: "monsterrat";
+    src: url("./assets/font/montserrat/Montserrat-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "monsterrat-bold";
+    src: url("./assets/font/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  }
+/*---------------------------------------------------------
+Sroll Bar
+---------------------------------------------------------*/
+body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #eeeeee; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #333333; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #eeeeee; /* creates padding around scroll thumb */
+  }
+/*---------------------------------------------------------
+BODY/HTML
+---------------------------------------------------------*/
+html{
+    font-size: 25px;
+    font-family: "monsterrat";
+    background-color: #1a1a1a;
+    color: #fff;
+}
+body{
+    color: #333333;
+    margin: 0%;
+    font-size: 25px;
+    font-family: "monsterrat";
+    background-color: #1a1a1a;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: "monsterrat-bold";
+}
+* {
+    color: #fff;
+    font-family: "monsterrat";
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+h4{
+    font-size: 35px;
+}
+/*---------------------------------------------------------
+NAV
+---------------------------------------------------------*/
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+[role=navigation]{
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 111;
+}
+#menu{
+  transition-duration: 0.5s;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #494949;
+  transition: color 0.3s ease;
+}
+#menuToggle a:hover
+{
+  color: tomato;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #2AD4FF;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #2AD4FF;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 100px;
+  padding-top: 125px;
+  
+  background: #494949;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+#menuToggle{
+    position: fixed;
+}
+.logo{
+    transform: scale(0.4);
+    padding: 20px 20px;
+    position: relative;
+    left: 20px;
+    top: -26px;
+    position: fixed;
+    z-index: 111;
+}
+/*---------------------------------------------------------
+HOME
+---------------------------------------------------------*/
+.home{
+    align-content: center;
+    text-align: center;
+}
+.home_logo{
+    width: 500px;
+    height: 300px;
+    margin-top: 20vh;
+    align-content: center;
+    text-align: center;
+}
+.txt-but{
+    margin-top: 25vh;
+}
+.home_txt{
+    position: absolute relative;
+    margin: auto;
+    margin-top: -8rem;
+    font-size: 35px;
+    font-weight: 600;
+}
+.home_button{
+    margin: auto;
+    margin-top: 11vh;
+    width: 528px;
+    height: 106px;
+    background: #494949;
+    border-radius: 30px;
+    position: absolute relative;
+}
+.home_ensv{
+    color: #2AD4FF;
+    margin-top: 30px;
+    margin-left: -230px;
+    font-size: 30px;
+    position: absolute;
+}
+/*---------------------------------------------------------
+GAMES
+---------------------------------------------------------*/
+.info{
+    position: absolute relative;
+    margin-top: 280px;
+}
+.info_tit{
+  position: absolute relative;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+}
+
+.info_txt{
+    position: absolute relative;
+    margin: auto;
+    width: 1112px;
+}
+.points1{
+  position: absolute;
+  margin-top: -50px;
+  transform: rotate(31deg);
+  width: 347px;
+}
+.points2{
+  position: absolute;
+  width: 347px;
+  margin-left: 1600px;
+  margin-top: -300px;
+}
+/*---------------------------------------------------------
+FOOTER
+---------------------------------------------------------*/
+.footer{
+    margin-top: 200px;
+}
+.footer_logo{
+    height: 121px;
+    margin-left: 15.5vw;
+}
+.footer_txt1{
+    left: 40vw;
+    margin-top: -8vh;
+    word-spacing: 100px;
+    position: absolute;
+}
+.footer_hr{
+    top: 5vh;
+    width: 1520px;
+    height: 1px;
+    color: #fff;
+    background: #494949;
+    position: relative;
+    margin: auto;
+}
+.footer_copy{
+    color: #2AD4FF;
+    position: relative;
+    top: 10vh;
+    left: 71.3vw;
+}
+.footer_real{
+    color: #2AD4FF;
+    position: relative;
+    top: 12vh;
+    left: 71.3vw;
+}
+.footer_logo1{
+    top: 3vh;
+    margin-left: 15.5vw;
+    position: relative;
+    word-spacing: 200px;
+    display: flex;
+    align-items: center;
+}
+.footer_discord{
+    width: 100px;
+    margin-right: 200px;
+    filter: brightness(0%) invert(100%);
+}
+.footer_mail{
+    width: 100px;
+    filter: brightness(0%) invert(100%);
+}
+@media (max-width: 600px){
+    marquee{width: 300px; align-content: center;text-align: center;}
+    h1{font-size:35px;}
+    h4{font-size:15px;margin: 30px;}
+    body{font-size: 15px;height: 1200px;}
+    html{font-size: 15px;}
+    .home_logo{transform: scale(0.7);}
+    .home_txt{margin-top: -20vh; font-size: 25px;}
+    .home_button{margin-top: 15vh; transform: scale(0.8);}
+    .info{margin-top: 100px;}
+    .info_txt{width: 80vw;margin-left: 50px;}
+    .points1{transform: scale(0.5);position: absolute;margin-top: -450px;margin-left: 150px;}
+    .points2{transform: scale(0.5);position: absolute;margin-top: -30px;margin-left: -120px;}
+    .info_button{transform: scale(0.55);margin-left: -20vw;}
+    .info_ensv{left: 30px;width: max-content;}
+    .footer{margin-top: 40vh;}
+    .footer_logo{align-content: center; text-align: center;margin-left: 80px; margin-top: -23vh; position: absolute;transform: scale(1);}
+    .footer_txt1{word-spacing: 0px;margin-left: -15vw; margin-top: -20px;width: max-content;word-spacing: 10px;}
+    .footer_hr{width: 70vw;}
+    .footer_copy{margin-left: -35vw;font-size: 13px;}
+    .footer_real{margin-left: -35vw;font-size: 13px;}
+    .footer_discord{width: 65px; position: absolute;margin-left: -8px;}
+    .footer_mail{width: 50px; margin-top: 50px; position: absolute;}
+}
+@media (max-width: 400px){
+    .home_txt{font-size: 20px;margin-top: -200px;}
+    .home_logo{transform: scale(0.5);margin-left: -15vw;}
+    .home_button{transform: scale(0.55);margin-left: -20vw;}
+}

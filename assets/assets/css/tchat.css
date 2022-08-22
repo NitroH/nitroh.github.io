@@ -1,0 +1,338 @@
+/*---------------------------------------------------------
+FONT
+---------------------------------------------------------*/
+@font-face {
+    font-family: "monsterrat";
+    src: url("./font/montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "monsterrat-bold";
+    src: url("./font/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("./font/Raleway/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-bold";
+  src: url("./font/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+/*---------------------------------------------------------
+Sroll Bar
+---------------------------------------------------------*/
+body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #161616; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #444444; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #161616; /* creates padding around scroll thumb */
+  }
+/*---------------------------------------------------------
+BODY/HTML
+---------------------------------------------------------*/
+html{
+    font-size: 25px;
+    font-family: "monsterrat";
+    background-color: #232220;
+    color: #fff;
+}
+body{
+    color: #333333;
+    margin: 0%;
+    font-size: 25px;
+    font-family: "monsterrat";
+    background-color: #232220;
+    height: 1785px;
+    overflow-x: hidden;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: "monsterrat-bold";
+}
+* {
+    color: #fff;
+    font-family: "monsterrat";
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+h4{
+    font-size: 35px;
+}
+/*---------------------------------------------------------
+HEADER
+---------------------------------------------------------*/
+.burger-menu-echap, .burger-menu-slide{
+  width: 50px;
+  left: 95vw;
+  top: 3vh;
+  position: fixed;
+  transition-duration: 1s;
+}
+.burger-menu-echap{
+  display: none;
+}
+.header_txt{
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  z-index: 1111111;
+}
+.header_ul_2{
+  position: absolute;
+  top: 0px;
+  left: 430px;
+}
+.header_img{
+  position: absolute;
+  filter: none;
+  left: 200px;
+  width: 484px;
+  height: 240px;
+  left: 900px;
+  top: 80px;
+}
+.header-mail, .header-insta, .header-discord{
+  position: absolute;
+  width: 66px;
+  height: 66px;
+}
+.header-social-network{
+  position: absolute;
+  left: 1700px;
+  top: 80px;
+}
+.header-discord{
+  top: 80px;
+}
+.header-mail{
+  top: 180px;
+}
+.header{
+    position: relative;
+    z-index: 111;
+    width: 100vw;
+    transition-duration: 1s;
+}
+.cacher{
+  display: none;
+  transition-duration: 1s;
+}
+.header-square{
+  width: 100vw;
+  height: 40vh;
+  background: #131313;
+}
+#logo{
+  font-size: 50px;
+  position: fixed;
+  font-family: Raleway;
+  z-index: 111;
+  top: 30px;
+  left: 50px;
+}
+/*---------------------------------------------------------
+HOME
+---------------------------------------------------------*/
+img{
+  filter: invert(85%) sepia(35%) saturate(5474%) hue-rotate(348deg) brightness(103%) contrast(104%);
+}
+.slide_left{
+  position: absolute;
+  width: 537px;
+  height: 1080px;
+  background: #1C1C1C;
+}
+
+/*ME*/
+.me{
+  position: relative; 
+  top: 15vh;
+  left: 8vw;
+}
+.me_img{
+  filter: none;
+  width: 150px;
+  border-radius: 20px;
+}
+.tit_me{
+  position: absolute;
+  left: -30px;
+}
+
+
+
+/*USER1*/
+.usr1{
+  width: 468px;
+  height: 97px;
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  background: #282828;
+  border-radius: 20px;
+}
+.usr1_img{
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  filter: none;
+  width: 75px;
+  border-radius: 20px;
+}
+.tit_usr1{
+  position: absolute;
+  left: 120px;
+  top: 25px;
+  font-family: monsterrat;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+
+/*USER2*/
+.usr2{
+  width: 468px;
+  height: 97px;
+  position: absolute;
+  top: 600px;
+  left: 30px;
+  background: #282828;
+  border-radius: 20px;
+}
+
+.usr2_img{
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  filter: none;
+  width: 75px;
+  border-radius: 20px;
+}
+
+.tit_usr2{
+  position: absolute;
+  left: 120px;
+  top: 25px;
+  font-family: monsterrat;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.add_friends{
+  position: absolute;
+  top: 87vh;
+  left: 1.7vw;
+  width: 468px;
+  height: 97px;
+  background: #282828;
+  border-radius: 20px;
+}
+.add_frinds_txt{
+  margin-left: 60px;
+}
+
+
+/*MESSAGE*/
+.slide_center{
+  position: relative;
+  top: 7vh;
+}
+.msg1{
+  position: relative;
+  padding: 20px;
+  left: 67vw;
+}
+.msg2{
+  position: relative;
+  padding: 20px;
+  left: 30vw;
+}
+.msg3{
+  position: relative;
+  padding: 20px;
+  left: 67vw;
+}
+.msg4{
+  position: relative;
+  padding: 20px;
+  left: 30vw;
+}
+.msg5{
+  position: relative;
+  padding: 20px;
+  left: 67vw;
+}
+
+.box{
+  width: 25vw;
+  height: 8vh;
+  background: #282828;
+  border-radius: 25px;
+}
+
+.you_tit, .him_tit{
+  position: relative;
+  left: .3vw;
+}
+
+.him_txt, .you_txt{
+  position: relative;
+  left: 2vw;
+  top: 2vh;
+}
+.you_txt{
+  position: relative;
+}
+#big_txt{
+  position: relative;
+  top: .7vh;
+}
+
+
+/*send message*/
+
+.send_mess_msg{
+  border: none;
+  font-size: 35px;
+  position: absolute;
+  left: 40vw;
+  top: 80vh;
+  width: 50vw;
+  height: 10vh;
+  background-color: #282828;
+  border-radius: 35px;
+
+}
+.send_mess_img{
+  width: 100px;
+}
+
+.but_send{
+  position: relative;
+  left: 92vw;
+  top: 5vh;
+  border: none;
+  background: none;
+  border-radius: 25px;
+}
+.but_send:hover{
+  background: #333333;
+}
+.but_send:active{
+  background: #1C1C1C;
+}
+.send_img{
+  position: relative;
+  width: 80px;
+}
+
+

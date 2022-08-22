@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site officiel de Alone Developement, ici vous pourrez en apprendre un peu plus sur nous et nos projets !">
+        <meta name="keywords" content="">
+        <meta name="author" content="Henri/Nitro for the Front End and DarkBlack for the Back End">
+		<title>Aether</title>
+		<link rel="stylesheet" href="./assets/css/tchat.css">
+		<link rel="SHORTCUT ICON" href="./assets/img/logo.png"/>
+    </head>
+
+    <body>
+        <!----------------------------------------------
+        HEADER
+        ------------------------------------------------>
+        <header class="header">
+            <img onclick="cacher()" class="burger-menu-slide" id="burger-menu-slide" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg">
+            <section class="cacher" id="cacher">
+                <img class="burger-menu-echap" id="burger-menu-echap" src="https://image.flaticon.com/icons/png/512/57/57165.png">
+                <div class="invisible">
+                    <div class="header_txt">
+                        <ul class="header_ul_1">
+                            <h3 class="header_tit_1">Utilisateur</h3>
+                            <li><a href="login.html">Se connecter</a></li>
+                            <li><a href="signin.html">S'inscrire</a></li>
+                            <li><a href="user.html">Paramètres d'utilisateur</a></li>
+                            <li><a href="tchat.html">Tchat</a></li>
+                        </ul>
+
+                        <ul class="header_ul_2">
+                            <h3 class="header_tit_2">Forum</h3>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="a-propos.html">A Propos</a></li>
+                            <li><a href="membre.html">Membres</a></li>
+                        </ul>
+                    </div>
+                    <img class="header_img" src="https://cdn.mos.cms.futurecdn.net/FrU6zB6BZMQCBWLxoVVigQ-970-80.jpg.webp">
+                </div>
+
+                <div class="header-social-network">
+                    <img class="header-discord" src="https://www.freeiconspng.com/uploads/discord-black-icon-1.png">
+                    <img class="header-insta" src="https://image.flaticon.com/icons/png/512/646/646094.png">
+                    <img class="header-mail" src="https://image.flaticon.com/icons/png/512/1384/1384031.png">
+                </div>
+            <div class="header-square"></div>
+            </section>
+        </header>
+
+        <a id="logo" href="index.html">New World Project</a>
+
+
+        <!--------------------------------------------
+        HOME
+        --------------------------------------------->
+        <div class="home" id="home">
+            <section class="slide_left">
+                <section class="me">
+                    <img class="me_img" src="https://thispersondoesnotexist.com/image">
+                    <div class="round_me_img"></div>
+                    <h2 class="tit_me">Username</h2>
+                </section>
+
+                <section class="usr1">
+                    <img class="usr1_img" src="https://thispersondoesnotexist.com/image">
+                    <div class="round_usr1"></div>
+                    <h3 class="tit_usr1">Username</h3>
+                </section>
+
+                <section class="usr2">
+                    <img class="usr2_img" src="https://thispersondoesnotexist.com/image">
+                    <div class="round_usr2"></div>
+                    <h3 class="tit_usr2">Username</h3>
+                </section>
+
+                <section class="add_friends">
+                    <img class="add_frinds_img" src="">
+                    <p class="add_frinds_txt">Ajouter des nouveaux amis</p>
+                </section>
+            </section>
+
+
+
+            <section class="slide_center">
+                <section class="msg1">
+                    <p class="you_tit">Vous</p>
+                    <div class="box">
+                        <p class="you_txt">Cc tfq ?</p>
+                    </div>
+                </section>
+
+                <section class="msg2">
+                    <p class="him_tit">Username</p>
+                    <div class="box">
+                        <p class="him_txt">Je suis a l'hopital</p>
+                    </div>
+                </section>
+
+                <section class="msg3">
+                    <p class="you_tit">Vous</p>
+                    <div class="box">
+                        <p class="you_txt">Pq ?</p>
+                    </div>
+                </section>
+
+                <section class="msg4">
+                    <p class="him_tit">Username</p>
+                    <div class="box">
+                        <p class="him_txt" id="big_txt">Pcq j'ai éssayé de faire un<br>salto arriere</p>
+                    </div>
+                </section>
+
+                <section class="msg5">
+                    <p class="you_tit">Vous</p>
+                    <div class="box">
+                        <p class="you_txt">A euuh baaa ok x)</p>
+                    </div>
+                </section>
+
+                <section class="send_mes">
+                    <input type="text" class="send_mess_msg" placeholder="                                  Envoyer un message">
+                    <button type="submit" class="but_send"><img class="send_img" src="https://cdn-icons-png.flaticon.com/512/786/786205.png"></button>
+                </section>
+            </section>
+        </div>
+
+
+
+        <script src="app.js"></script>
+        <!--ICON
+        INSTAGRAM : https://image.flaticon.com/icons/png/512/1384/1384031.png
+        SEARCH : https://image.flaticon.com/icons/png/512/622/622669.png 
+        SPEAK : https://image.flaticon.com/icons/png/512/4093/4093137.png
+        VIEW : https://image.flaticon.com/icons/png/512/709/709612.png
+        MORE : https://image.flaticon.com/icons/png/512/512/512142.png
+        CHECK : https://image.flaticon.com/icons/png/512/1828/1828743.png
+        SEETING : https://image.flaticon.com/icons/png/512/2099/2099058.png
+        MAIL : https://image.flaticon.com/icons/png/512/646/646094.png
+        INSTAGRAM : https://image.flaticon.com/icons/png/512/1384/1384031.png
+        DISCORD : https://www.google.com/url?sa=i&url=https%3A%2F%2Flogo-marque.com%2Fdiscord-logo%2F&psig=AOvVaw2EvDnd06F6wFeGFGeuYbKS&ust=1631042758147000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMj2mpLv6vICFQAAAAAdAAAAABAD
+        C OFFICIAL : https://image.flaticon.com/icons/png/512/565/565487.png
+        CALENDAR : https://image.flaticon.com/icons/png/512/42/42446.png
+        CROIX : https://image.flaticon.com/icons/png/512/57/57165.png
+        MERCI A FLATICON :)
+        -->
+    </body>
+</html>

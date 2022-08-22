@@ -1,0 +1,232 @@
+/*------------------------------------------------------------
+
+Project:	Filselisse Portfolio
+Version:	1.0
+Date: 01/12/2021
+
+==== TABLE OF CONTENTS ====
+
+1.0 - General Styles
+2.0 - Home
+3.0 - Creation
+4.0 - Learn more
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - General Styles
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Altone-Bold';
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+h1 {
+  font-size: 68px;
+  line-height: 67px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 18px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 14px;
+}
+p {
+  font-family: 'Altone';
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  font-size: 12px;
+  line-height: 24px;
+}
+a,
+span {
+  font-family: 'Altone';
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+button {
+  font-family: altone-bold;
+  font-size: 24px;
+  padding: 25px;
+  background: #91CFC9;
+  border: none;
+  position: relative;
+  top: 400px;
+  left: 10vw;
+}
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+li{
+  list-style-type: none;
+  list-style: none;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+input{
+  width: 499px;
+  height: 77px;
+  background: #E5EAE9;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  box-sizing: border-box;
+  font-size: 26px;
+}
+input::placeholder{
+  font-size: 26px;
+}
+input:focus{
+  outline: none;
+}
+input[type=text]{
+  padding-left: 25px;
+  font-family: Altone;
+  color: #353535;
+}
+html,
+body {
+  position: relative;
+  background: #E8EDEC;
+}
+::selection{
+  color: #fff;
+  background: #91CFC9;
+}
+@font-face {
+  font-family: "Altone";
+  src: url("./assets/font/AltoneTrial-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Altone-Bold";
+  src: url("./assets/font/AltoneTrial-Bold.ttf") format("truetype");
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 50px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #979797;
+}
+/*--------------------------------------------------------------
+2.0 - Home
+--------------------------------------------------------------*/
+ul{
+  position: relative;
+  display: flex;
+  align-content: right;
+  justify-content: right;
+  right: -8px;
+}
+
+li > a{
+  position: relative;
+  padding: 75px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #91CFC9;
+  top: 56px;
+}
+a:hover{
+  background: #16d0bf;
+}
+
+.header-logo{
+  position: absolute;
+  background: none;
+  top: -35px;
+  left: 5vw;
+}
+
+.contact{
+  padding-right: 250px;
+}
+/*--------------------------------------------------------------
+3.0 - Formulaire
+--------------------------------------------------------------*/
+.home > h1{
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+.name{
+  position: absolute;
+  width: 375px;
+  height: 77px;
+  left: 509px;
+  top: 404px;  
+}
+.mail{
+    position: absolute;
+    width: 499px;
+    height: 77px;
+    left: 936px;
+    top: 404px;
+}
+.msg{
+    position: absolute;
+    width: 926px; 
+    height: 379px;
+    left: 509px;
+    top: 528px;
+    background: #E5EAE9;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-sizing: border-box;
+    font-size: 26px;
+    font-family: Altone;
+}
+.msg::placeholder{
+  font-size: 26px;
+  font-family: Altone;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.msg:focus{
+  outline: none;
+}
+.msg[type=text] {
+  padding-left: 25px;
+  padding-top: 25px;
+  font-family: Altone;
+  color: #353535;
+}
+.send{
+    font-family: altone-bold;
+    font-size: 24px;
+    padding: 25px;
+    background: #81D8D0;
+    border: none;
+    position: absolute;
+    top: 950px;
+    left: 510px;
+    border: solid 3px #81D8D0;
+}
