@@ -34,7 +34,7 @@ p {
   font-style: normal;
   font-weight: 400;
   color: #383838;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 small {
@@ -69,11 +69,11 @@ b:hover {
   cursor: pointer;
 }
 
-/* Selection */
 ::-moz-selection {
   color: #383838;
   background: #f6f6f6;
 }
+
 ::selection {
   color: #383838;
   background: #f6f6f6;
@@ -126,35 +126,241 @@ h3 {
   margin-top: 20px;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
+.autre p {
+  margin-top: 8px;
 }
 
-.formation {
+.formation, .projet, .competence {
   padding: 50px;
 }
 
-.formation p {
-  padding-top: 45px;
+.formation p, .projet p {
+  padding-top: 25px;
 }
 
-.formation p:first-of-type {
+.formation p:first-of-type, .projet p:first-of-type {
   padding-top: 10px;
 }
 
-.projet {
-  padding: 50px;
+@media screen and (max-width: 1200px) {
+  .sideBar {
+    padding: 45px;
+    width: 35%;
+  }
+  .logo {
+    width: 175px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 15px;
+  }
+  b {
+    font-size: 17px;
+  }
+  .formation, .projet, .competence {
+    padding: 45px;
+  }
 }
-
-.projet p {
-  padding-top: 45px;
+@media screen and (max-width: 1000px) {
+  .sideBar {
+    padding: 45px;
+    width: 45%;
+  }
+  .logo {
+    width: 150px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  small {
+    font-size: 12px;
+  }
+  b {
+    font-size: 15px;
+  }
+  .formation, .projet, .competence {
+    padding: 45px;
+    padding-bottom: 30px;
+  }
+  .formation p, .projet p {
+    padding-top: 22px;
+  }
+  .formation p:first-of-type, .projet p:first-of-type {
+    padding-top: 0px;
+  }
 }
-
-.projet p:first-of-type {
-  padding-top: 10px;
+@media screen and (max-width: 700px) {
+  .sideBar {
+    padding: 35px;
+    width: 45%;
+  }
+  .logo {
+    width: 140px;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  b {
+    font-size: 15px;
+  }
+  .formation, .projet, .competence {
+    padding: 35px;
+    padding-bottom: 15px;
+  }
+  .formation p, .projet p {
+    padding-top: 20px;
+  }
 }
-
-.competence {
-  padding: 50px;
+@media screen and (max-width: 600px) {
+  .sideBar {
+    padding: 32px;
+    width: 45%;
+  }
+  .logo {
+    width: 125px;
+  }
+  h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .presentation, .contact, .autre {
+    margin-top: 15px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 13px;
+  }
+  small {
+    font-size: 11px;
+  }
+  b {
+    font-size: 15px;
+  }
+  .formation, .projet, .competence {
+    padding: 32px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+  }
+  .formation p, .projet p {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sideBar {
+    padding: 22px;
+    width: 45%;
+  }
+  .logo {
+    width: 110px;
+  }
+  h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .presentation, .contact, .autre {
+    margin-top: 15px;
+  }
+  h2 {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 600s;
+  }
+  p {
+    font-size: 13px;
+  }
+  b {
+    font-size: 14px;
+  }
+  .formation, .projet, .competence {
+    padding: 22px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+  }
+  .formation p, .projet p {
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sideBar {
+    padding: 20px;
+    width: 45%;
+  }
+  .logo {
+    width: 100px;
+  }
+  h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .presentation, .contact, .autre {
+    margin-top: 15px;
+  }
+  h2 {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 600s;
+  }
+  p {
+    font-size: 12px;
+  }
+  b {
+    font-size: 14px;
+  }
+  small {
+    font-size: 10px;
+  }
+  .formation, .projet, .competence {
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+  }
+  .formation p, .projet p {
+    padding-top: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
