@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #383838;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 3.5px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #383838;
+  font-size: 16px;
+}
+
+small {
+  font-size: 14px;
+}
+
+a, a:focus, a:active, span {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #383838;
+  transition-duration: 0.2s;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none none;
+}
+
+b {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+b:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+::-moz-selection {
+  color: #383838;
+  background: #f6f6f6;
+}
+
+::selection {
+  color: #383838;
+  background: #f6f6f6;
+}
+
+html,
+body {
+  color: #383838;
+  font-family: "Poppins", sans-serif;
+  font-weight: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+html *,
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.sideBar {
+  background-color: #EEEEEE;
+  padding: 50px;
+  width: 30%;
+}
+
+.logo {
+  width: 200px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+h3 {
+  margin-top: 5px;
+}
+
+.presentation, .contact, .autre {
+  margin-top: 20px;
+}
+
+.autre p {
+  margin-top: 8px;
+}
+
+.formation, .projet, .competence {
+  padding: 50px;
+}
+
+.formation p, .projet p {
+  padding-top: 25px;
+}
+
+.formation p:first-of-type, .projet p:first-of-type {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sideBar {
+    padding: 45px;
+    width: 35%;
+  }
+  .logo {
+    width: 175px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 15px;
+  }
+  b {
+    font-size: 17px;
+  }
+  .formation, .projet, .competence {
+    padding: 45px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .sideBar {
+    padding: 45px;
+    width: 45%;
+  }
+  .logo {
+    width: 150px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  small {
+    font-size: 12px;
+  }
+  b {
+    font-size: 15px;
+  }
+  .formation, .projet, .competence {
+    padding: 45px;
+    padding-bottom: 30px;
+  }
+  .formation p, .projet p {
+    padding-top: 22px;
+  }
+  .formation p:first-of-type, .projet p:first-of-type {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sideBar {
+    padding: 35px;
+    width: 45%;
+  }
+  .logo {
+    width: 140px;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  b {
+    font-size: 15px;
+  }
+  .formation, .projet, .competence {
+    padding: 35px;
+    padding-bottom: 15px;
+  }
+  .formation p, .projet p {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sideBar {
+    padding: 32px;
+    width: 45%;
+  }
+  .logo {
+    width: 125px;
+  }
+  h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .presentation, .contact, .autre {
+    margin-top: 15px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 13px;
+  }
+  small {
+    font-size: 11px;
+  }
+  b {
+    font-size: 15px;
+  }
+  .formation, .projet, .competence {
+    padding: 32px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+  }
+  .formation p, .projet p {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sideBar {
+    padding: 22px;
+    width: 45%;
+  }
+  .logo {
+    width: 110px;
+  }
+  h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .presentation, .contact, .autre {
+    margin-top: 15px;
+  }
+  h2 {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 600s;
+  }
+  p {
+    font-size: 13px;
+  }
+  b {
+    font-size: 14px;
+  }
+  .formation, .projet, .competence {
+    padding: 22px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+  }
+  .formation p, .projet p {
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sideBar {
+    padding: 20px;
+    width: 45%;
+  }
+  .logo {
+    width: 100px;
+  }
+  h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .presentation, .contact, .autre {
+    margin-top: 15px;
+  }
+  h2 {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 600s;
+  }
+  p {
+    font-size: 12px;
+  }
+  b {
+    font-size: 14px;
+  }
+  small {
+    font-size: 10px;
+  }
+  .formation, .projet, .competence {
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+  }
+  .formation p, .projet p {
+    padding-top: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
