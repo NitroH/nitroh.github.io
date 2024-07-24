@@ -6,20 +6,10 @@ Date:      06-08-2022
 
 ---- TABLE OF CONTENTS ----
 
-1.0 -
-2.0 -
-3.0 -
-4.0 -
-5.0 -
-6.0 -
-7.0 -
-8.0 -
-9.0 -
-10.0 -
-11.0 -
-12.0 -
-13.0 -
-14.0 - 
+1.0 - Font
+2.0 - Variable  
+3.0 - Style
+4.0 - Content
 --------------------------------------------------------------*/
 
 /*--------------------------------------
@@ -46,41 +36,8 @@ $pop: 'Poppins', sans-serif;
 
 
 
-/*--------------------------------------
-4.0 - Cursor
---------------------------------------*/
-/* Custom Cursor */
-.ppk-dot,
-.ppk-dot-outline {
-  z-index: 999;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-.ppk-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #feac43;
-  width: 0px;
-}
-.ppk-dot-outline {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(254, 172, 67, 0.5);
-}
-
-
-
 /*--------------------------------------------------------------
-5.0 - General Styles
+3.0 - General Styles
 --------------------------------------------------------------*/
 h1,
 h2,
@@ -126,17 +83,14 @@ a, a:focus, a:active, span {
   font-style: normal;
   font-weight: 400;
 }
-
 a:hover{
   color: #383838;
   transition-duration: .2s;
   font-weight: 500;
 }
-
 ul {
   list-style: none none;
 }
-/* Selection */
 ::selection{
   color: $col4;
   background: #f6f6f6;
@@ -168,7 +122,7 @@ body{
 
 
 /*--------------------------------------
-9.0 - Content
+4.0 - Content
 --------------------------------------*/
 main {
   section.home{
@@ -346,78 +300,95 @@ main {
 
 
   section.projects{
-    padding-top: -10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-
-    .break{
-      flex-basis: 100%;
-      width: 0;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .avadress, .fil, .utopia, .alone, .nwh, .flower{
-      //style
-      width: 250px;
-      height: 250px;
-      background: linear-gradient(135deg, #C3003B 0%, #FF8059 100%);
-      border-radius: 15px;
-      //positioning
-      margin-bottom: 80px;
-      margin-left: 80px;
-      ///centering
+    .pres{
+      padding-top: -10px;
       display: flex;
+      flex-flow: row wrap;
       justify-content: center;
 
-        img{
-          margin: auto;
-        }
-
-        .title{
-          //style
-          width: 250px;
-          height: 50px;
-          background: rgba(255, 255, 255, 0.12);
-          border-radius: 0px 0px 8px 8px;
-          //centering
-          display: flex;
-          align-items: flex-start;
-          //positioning
-          position: absolute;
-          margin-top: 200px;
-          h4{
+      .break{
+        flex-basis: 100%;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+      }
+  
+      .eos, .fil, .avadress, .cv, .ultime, .nitch{
+        //style
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+        //positioning
+        margin-bottom: 80px;
+        margin-left: 80px;
+        ///centering
+        display: flex;
+        justify-content: center;
+  
+          img{
             margin: auto;
-            color: #000;
           }
+  
+          .title{
+            //style
+            width: 250px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.125);
+            border-radius: 0px 0px 8px 8px;
+            display: flex;
+            align-items: flex-start;
+            position: absolute;
+            margin-top: 200px;
+            h4{
+              margin: auto;
+              color: #000;
+            }
+          }
+      }
+
+      .eos{
+        background: rgb(255,255,255);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(26,150,252,0.8) 100%);
+      }
+
+      .fil{
+        background: rgb(255,255,255);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(129,216,208,1) 100%);
+        img{ transform: rotate(30deg); }
+      }
+
+      .fil:hover{
+        cursor: pointer;
+      }
+
+      .avadress{
+        background: rgb(245,245,245);
+        background: linear-gradient(135deg, rgba(245,245,245,1) 0%, rgba(231,30,92,0.8) 100%);
+        img{
+          zoom: 0.8;
         }
-    }
+      }
 
-    .fil{
-      background: linear-gradient(135deg, #E8EDEC 0%, #81D8D0 100%);
-      img{ transform: rotate(30deg); }
+      .cv{
+        background: #383838;
+      }
+  
+      .ultime{
+        background: rgb(255,255,255);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgb(222, 208, 183) 100%);
+        img{
+          opacity: 0.8;
+        }
+      }
+  
+      .nitch{
+        background: rgb(255,255,255);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(188,235,36,1) 100%);
+      }
     }
-
-    .utopia{
-      background: linear-gradient(135deg, #FFFFFF 0%, #3CA990 100%);
-    }
-
-    .alone{
-      background: linear-gradient(135deg, #1A1A1A 0%, #2AD4FF 100%);
-    }
-
-    .nwh{
-      background: linear-gradient(135deg, #1A1A1A 0%, #FFB10F 100%);
-    }
-
-    .flower{
-      background: linear-gradient(135deg, #E798AE 0%, #FFEFF4 100%);
-    }
-
+    
     .background{
       p{
-        //font properties
         font-size: 300px;
         font-weight: 700;
         font-family: $monst;
@@ -436,6 +407,11 @@ main {
       p{
         font-size: 14px;
         color: #7E7E7E;
+      }
+
+      .link_cv{
+        font-size: 16px;
+        color: #383838;
       }
     }
 
@@ -585,7 +561,9 @@ main {
         flex-direction: row;
 
         .title{
-          width: 176px;
+          width: 280px;
+          padding: 0;
+          margin: 0;
           h3{
             font-family: $pop ;
             font-weight: 600;
@@ -601,23 +579,38 @@ main {
           }
 
           .mail{
+            width: 0;
             padding-top: 20px;
             display: flex;
             flex-direction: row;
+            align-self: center;
             .icon{
-              margin-right: 10px;
+              padding-right: 10px;
+              align-self: center;
             }
             p{
               font-size: 14px;
+              align-self: center;
+            }
+          }
+
+          .mail:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+            a{
+              color: #383838;
+              transition-duration: .2s;
+              font-weight: 500;
             }
           }
         }
 
-        .navigation {
+        .navigation { 
           display: flex;
           flex-direction: row;
-          div:not(:first-child), div:not(:nth-child(5)) {
-            padding-left: 175px;
+          div {
+            padding-left: 155px;
           }
           h6 {
             font-family: $pop;
@@ -639,9 +632,22 @@ main {
           }
 
           .opt{
-            img{
-              width: 14px;
+            align-self: center;
+            ul{
+              li{
+                a{
+                  display: flex;
+                  flex-direction: row;
+                  align-self: center;
+                  img{
+                    width: 14px;
+                    align-self: center;
+                    padding-right: 4px;
+                  }
+                }
+              }
             }
+            
           }
         }
       }
@@ -658,6 +664,7 @@ main {
 
       .bottom{
         padding-top: 20px;
+        padding-bottom: 20px;
         display: flex;
         flex-direction: row;
         .realise{
@@ -829,7 +836,7 @@ main {
         display: none;
       }
 
-      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+      .avadress, .fil, .eos, .alone, .ultime, .nitch {
         zoom: 0.7;
       }
 
@@ -1060,7 +1067,7 @@ main {
         display: none;
       }
 
-      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+      .avadress, .fil, .eos, .alone, .ultime, .nitch {
         zoom: 0.7;
       }
 
@@ -1268,7 +1275,7 @@ main {
     }
 
     section.projects{
-      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+      .avadress, .fil, .eos, .alone, .ultime, .nitch {
         zoom: 0.6;
       }
 
@@ -1516,7 +1523,7 @@ main {
 
 
     section.projects{
-      .avadress, .fil, .utopia, .alone, .nwh, .flower {
+      .avadress, .fil, .eos, .alone, .ultime, .nitch {
         zoom: 0.5;
       }
 

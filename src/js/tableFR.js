@@ -13,9 +13,9 @@ let date = document.querySelector('.date-journey');
 
 
 formation.onclick = function() {
-    title.innerHTML = "Training";
-    date.innerHTML = "All the time.";
-    text.innerHTML = "> In my free time, I try to make little projects in order to improve my computers knowledge, and to get ahead in my future studies.";
+    title.innerHTML = "Entrainement";
+    date.innerHTML = "Tout le temps.";
+    text.innerHTML = "> Dans mon temps libre, J'essaye de faire des petits projets pour élargir mes connaissances en informatique, et pour prendre de l'avance dans mes futures études.";
     document.querySelector('.line2').style.marginTop = "0px";
     tab.forEach(tabulation => {
         tabulation.style.color = "#7e7e7e";
@@ -26,9 +26,9 @@ formation.onclick = function() {
 };
 
 middle.onclick = function() {
-    title.innerHTML = "Middle School";
-    date.innerHTML = "September 2020 -";
-    text.innerHTML = "> I learnt a lot about HTML, CSS, JavaScript, React, Node JS";
+    title.innerHTML = "Collège";
+    date.innerHTML = "Septembre 2020 -";
+    text.innerHTML = "> J'ai beaucoup appris et notament HTML, CSS, JavaScript, React, Node JS";
     document.querySelector('.line2').style.marginTop = "70px";
     tab.forEach(tabulation => {
         tabulation.style.color = "#7e7e7e";
@@ -39,9 +39,9 @@ middle.onclick = function() {
 };
 
 high.onclick = function() {
-    title.innerHTML = "High School";
-    date.innerHTML = "September 2023 -";
-    text.innerHTML = "> Currently in high school, I took a break in programming but I'm still ambtious on learning new things !<br> <br>> I learned a lot about network, server, and raspberry pi. ";
+    title.innerHTML = "Lycée";
+    date.innerHTML = "Septembre 2023 -";
+    text.innerHTML = "> Je suis actuellement au lycée, j'ai fait une pause dans la programmation mais je reste toujours très ambitieux à l'idée d'apprendre de nouvelles choses !<br> <br>> J'ai appris beaucoup de choses autours du réseau, des serveurs, et des raspberry pi. ";
     document.querySelector('.line2').style.marginTop = "140px";
     tab.forEach(tabulation => {
         tabulation.style.color = "#7e7e7e";
@@ -52,9 +52,9 @@ high.onclick = function() {
 };
 
 studies.onclick = function() {
-    title.innerHTML = "Studies";
-    date.innerHTML = "A day...";
-    text.innerHTML = "> I'm still in high school but i'm very ambitious, and I'll do my best to do the best studies. <br> <br>> I'd like to integrate a preparatory class, which is, in a nutshell, the ELITE studies you can have in France.";
+    title.innerHTML = "Etudes";
+    date.innerHTML = "Un jour...";
+    text.innerHTML = "> Je suis au lycée mais je reste très ambitieux, je vais faire de mon mieux pour faire les meilleures études possibles et avoir un métier qui me plait. <br> <br>> Mon rêve serait d'intégrer une classe préparatoire scientifique, qui est, en résumé, l'élite des études francaise.";
     document.querySelector('.line2').style.marginTop = "210px";
     tab.forEach(tabulation => {
         tabulation.style.color = "#7e7e7e";
@@ -65,9 +65,9 @@ studies.onclick = function() {
 };
 
 job.onclick = function() {
-    title.innerHTML = "1st job";
-    date.innerHTML = "A day...";
-    text.innerHTML = "> As I wrote before, i'm currently in high school. My dream is to have a job that I love : this is why I'll do my best. <br> <br>> I don't know for the moment if i want to work on computer sciences or in sciences like physics.";
+    title.innerHTML = "1e métier";
+    date.innerHTML = "Un jour...";
+    text.innerHTML = "> Comment je l'ai dit précédement, je suis encore au lycée. Cependant, j'ai un objectif tres précsi qui est d'avoir un métier qui me plait, c'est donc pour cette raison que je vais donner le meilleur de moi même pour atteindre cet objectif <br> <br>> Je ne sais pas encore si je souhaite travailler dans l'informatique ou dans la science comme la physique qui m'interesse également.";
     document.querySelector('.line2').style.marginTop = "280px";
     tab.forEach(tabulation => {
         tabulation.style.color = "#7e7e7e";

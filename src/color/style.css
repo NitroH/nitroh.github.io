@@ -7,20 +7,10 @@ Date:      06-08-2022
 
 ---- TABLE OF CONTENTS ----
 
-1.0 -
-2.0 -
-3.0 -
-4.0 -
-5.0 -
-6.0 -
-7.0 -
-8.0 -
-9.0 -
-10.0 -
-11.0 -
-12.0 -
-13.0 -
-14.0 - 
+1.0 - Font
+2.0 - Variable  
+3.0 - Style
+4.0 - Content
 --------------------------------------------------------------*/
 /*--------------------------------------
 1.0 - Font Import
@@ -32,41 +22,8 @@ Date:      06-08-2022
 /*--------------------------------------
 2.0 - Variable
 --------------------------------------*/
-/*--------------------------------------
-4.0 - Cursor
---------------------------------------*/
-/* Custom Cursor */
-.ppk-dot,
-.ppk-dot-outline {
-  z-index: 999;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-.ppk-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #feac43;
-  width: 0px;
-}
-
-.ppk-dot-outline {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(254, 172, 67, 0.5);
-}
-
 /*--------------------------------------------------------------
-5.0 - General Styles
+3.0 - General Styles
 --------------------------------------------------------------*/
 h1,
 h2,
@@ -130,7 +87,11 @@ ul {
   list-style: none none;
 }
 
-/* Selection */
+::-moz-selection {
+  color: #383838;
+  background: #f6f6f6;
+}
+
 ::selection {
   color: #383838;
   background: #f6f6f6;
@@ -162,7 +123,7 @@ body {
 }
 
 /*--------------------------------------
-9.0 - Content
+4.0 - Content
 --------------------------------------*/
 main section.home h1 {
   font-size: 200px;
@@ -288,62 +249,78 @@ main section.journey .background p {
   text-align: right;
   padding-top: 100px;
 }
-main section.projects {
+main section.projects .pres {
   padding-top: -10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-main section.projects .break {
+main section.projects .pres .break {
   flex-basis: 100%;
   width: 0;
   height: 0;
   overflow: hidden;
 }
-main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
+main section.projects .pres .eos, main section.projects .pres .fil, main section.projects .pres .avadress, main section.projects .pres .cv, main section.projects .pres .ultime, main section.projects .pres .nitch {
   width: 250px;
   height: 250px;
-  background: linear-gradient(135deg, #C3003B 0%, #FF8059 100%);
   border-radius: 15px;
   margin-bottom: 80px;
   margin-left: 80px;
   display: flex;
   justify-content: center;
 }
-main section.projects .avadress img, main section.projects .fil img, main section.projects .utopia img, main section.projects .alone img, main section.projects .nwh img, main section.projects .flower img {
+main section.projects .pres .eos img, main section.projects .pres .fil img, main section.projects .pres .avadress img, main section.projects .pres .cv img, main section.projects .pres .ultime img, main section.projects .pres .nitch img {
   margin: auto;
 }
-main section.projects .avadress .title, main section.projects .fil .title, main section.projects .utopia .title, main section.projects .alone .title, main section.projects .nwh .title, main section.projects .flower .title {
+main section.projects .pres .eos .title, main section.projects .pres .fil .title, main section.projects .pres .avadress .title, main section.projects .pres .cv .title, main section.projects .pres .ultime .title, main section.projects .pres .nitch .title {
   width: 250px;
   height: 50px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.125);
   border-radius: 0px 0px 8px 8px;
   display: flex;
   align-items: flex-start;
   position: absolute;
   margin-top: 200px;
 }
-main section.projects .avadress .title h4, main section.projects .fil .title h4, main section.projects .utopia .title h4, main section.projects .alone .title h4, main section.projects .nwh .title h4, main section.projects .flower .title h4 {
+main section.projects .pres .eos .title h4, main section.projects .pres .fil .title h4, main section.projects .pres .avadress .title h4, main section.projects .pres .cv .title h4, main section.projects .pres .ultime .title h4, main section.projects .pres .nitch .title h4 {
   margin: auto;
   color: #000;
 }
-main section.projects .fil {
-  background: linear-gradient(135deg, #E8EDEC 0%, #81D8D0 100%);
+main section.projects .pres .eos {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgba(26, 150, 252, 0.8) 100%);
 }
-main section.projects .fil img {
+main section.projects .pres .fil {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(129, 216, 208) 100%);
+}
+main section.projects .pres .fil img {
   transform: rotate(30deg);
 }
-main section.projects .utopia {
-  background: linear-gradient(135deg, #FFFFFF 0%, #3CA990 100%);
+main section.projects .pres .fil:hover {
+  cursor: pointer;
 }
-main section.projects .alone {
-  background: linear-gradient(135deg, #1A1A1A 0%, #2AD4FF 100%);
+main section.projects .pres .avadress {
+  background: rgb(245, 245, 245);
+  background: linear-gradient(135deg, rgb(245, 245, 245) 0%, rgba(231, 30, 92, 0.8) 100%);
 }
-main section.projects .nwh {
-  background: linear-gradient(135deg, #1A1A1A 0%, #FFB10F 100%);
+main section.projects .pres .avadress img {
+  zoom: 0.8;
 }
-main section.projects .flower {
-  background: linear-gradient(135deg, #E798AE 0%, #FFEFF4 100%);
+main section.projects .pres .cv {
+  background: #383838;
+}
+main section.projects .pres .ultime {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(222, 208, 183) 100%);
+}
+main section.projects .pres .ultime img {
+  opacity: 0.8;
+}
+main section.projects .pres .nitch {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(188, 235, 36) 100%);
 }
 main section.projects .background p {
   font-size: 300px;
@@ -363,6 +340,10 @@ main section.skills .title {
 main section.skills .title p {
   font-size: 14px;
   color: #7E7E7E;
+}
+main section.skills .title .link_cv {
+  font-size: 16px;
+  color: #383838;
 }
 main section.skills .offer {
   display: flex;
@@ -484,7 +465,9 @@ main .footer footer .top {
   flex-direction: row;
 }
 main .footer footer .top .title {
-  width: 176px;
+  width: 280px;
+  padding: 0;
+  margin: 0;
 }
 main .footer footer .top .title h3 {
   font-family: "Poppins", sans-serif;
@@ -500,22 +483,36 @@ main .footer footer .top .title h3 span {
   color: #7e7e7e;
 }
 main .footer footer .top .title .mail {
+  width: 0;
   padding-top: 20px;
   display: flex;
   flex-direction: row;
+  align-self: center;
 }
 main .footer footer .top .title .mail .icon {
-  margin-right: 10px;
+  padding-right: 10px;
+  align-self: center;
 }
 main .footer footer .top .title .mail p {
   font-size: 14px;
+  align-self: center;
+}
+main .footer footer .top .title .mail:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+main .footer footer .top .title .mail:hover a {
+  color: #383838;
+  transition-duration: 0.2s;
+  font-weight: 500;
 }
 main .footer footer .top .navigation {
   display: flex;
   flex-direction: row;
 }
-main .footer footer .top .navigation div:not(:first-child), main .footer footer .top .navigation div:not(:nth-child(5)) {
-  padding-left: 175px;
+main .footer footer .top .navigation div {
+  padding-left: 155px;
 }
 main .footer footer .top .navigation h6 {
   font-family: "Poppins", sans-serif;
@@ -534,8 +531,18 @@ main .footer footer .top .navigation .explore, main .footer footer .top .navigat
   display: flex;
   flex-direction: column;
 }
-main .footer footer .top .navigation .opt img {
+main .footer footer .top .navigation .opt {
+  align-self: center;
+}
+main .footer footer .top .navigation .opt ul li a {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+main .footer footer .top .navigation .opt ul li a img {
   width: 14px;
+  align-self: center;
+  padding-right: 4px;
 }
 main .footer footer .line {
   margin-top: 20px;
@@ -546,6 +553,7 @@ main .footer footer .line {
 }
 main .footer footer .bottom {
   padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -621,7 +629,7 @@ main .footer footer .bottom .social-media img {
   main section.projects .break {
     display: none;
   }
-  main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
+  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch {
     zoom: 0.7;
   }
   main section.projects .background p {
@@ -760,7 +768,7 @@ main .footer footer .bottom .social-media img {
   main section.projects .break {
     display: none;
   }
-  main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
+  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch {
     zoom: 0.7;
   }
   main section.projects .background p {
@@ -883,7 +891,7 @@ main .footer footer .bottom .social-media img {
   main section.journey .background p {
     font-size: 70px;
   }
-  main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
+  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch {
     zoom: 0.6;
   }
   main section.projects .background p {
@@ -1023,7 +1031,7 @@ main .footer footer .bottom .social-media img {
   main section.journey .background p {
     font-size: 60px;
   }
-  main section.projects .avadress, main section.projects .fil, main section.projects .utopia, main section.projects .alone, main section.projects .nwh, main section.projects .flower {
+  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch {
     zoom: 0.5;
   }
   main section.projects .background p {
@@ -1120,6 +1128,4 @@ main .footer footer .bottom .social-media img {
   main .footer footer .bottom .social-media img {
     padding-left: 15px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
