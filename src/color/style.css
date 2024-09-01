@@ -87,11 +87,6 @@ ul {
   list-style: none none;
 }
 
-::-moz-selection {
-  color: #383838;
-  background: #f6f6f6;
-}
-
 ::selection {
   color: #383838;
   background: #f6f6f6;
@@ -465,7 +460,6 @@ main .footer footer .top {
   flex-direction: row;
 }
 main .footer footer .top .title {
-  width: 280px;
   padding: 0;
   margin: 0;
 }
@@ -629,7 +623,7 @@ main .footer footer .bottom .social-media img {
   main section.projects .break {
     display: none;
   }
-  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch {
+  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch, main section.projects .cv {
     zoom: 0.7;
   }
   main section.projects .background p {
@@ -672,10 +666,6 @@ main .footer footer .bottom .social-media img {
     display: flex;
     justify-content: initial;
     padding-left: 20px;
-  }
-  main .footer footer .top .title {
-    display: flex;
-    flex-direction: column;
   }
   main .footer footer .top .title h3 {
     font-size: 28px;
@@ -812,10 +802,6 @@ main .footer footer .bottom .social-media img {
     justify-content: initial;
     padding-left: 20px;
   }
-  main .footer footer .top .title {
-    display: flex;
-    flex-direction: column;
-  }
   main .footer footer .top .title h3 {
     font-size: 28px;
     line-height: 43px;
@@ -891,7 +877,7 @@ main .footer footer .bottom .social-media img {
   main section.journey .background p {
     font-size: 70px;
   }
-  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch {
+  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch, main section.projects .cv {
     zoom: 0.6;
   }
   main section.projects .background p {
@@ -936,10 +922,6 @@ main .footer footer .bottom .social-media img {
     justify-content: initial;
     padding-left: 20px;
   }
-  main .footer footer .top .title {
-    display: flex;
-    flex-direction: column;
-  }
   main .footer footer .top .title h3 {
     font-size: 28px;
     line-height: 43px;
@@ -963,7 +945,7 @@ main .footer footer .bottom .social-media img {
     display: none;
   }
   main .footer footer .top .navigation div:not(:first-child), main .footer footer .top .navigation div:not(:nth-child(5)) {
-    padding-left: 15vw;
+    padding-left: 30vw;
   }
   main .footer footer .top .navigation .opt img {
     width: 14px;
@@ -1031,7 +1013,7 @@ main .footer footer .bottom .social-media img {
   main section.journey .background p {
     font-size: 60px;
   }
-  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch {
+  main section.projects .avadress, main section.projects .fil, main section.projects .eos, main section.projects .alone, main section.projects .ultime, main section.projects .nitch, main section.projects .cv {
     zoom: 0.5;
   }
   main section.projects .background p {
@@ -1069,10 +1051,6 @@ main .footer footer .bottom .social-media img {
   main section.contact .background p {
     font-size: 70px;
   }
-  main .footer footer .top .title {
-    display: flex;
-    flex-direction: column;
-  }
   main .footer footer .top .title h3 {
     font-size: 24px;
     line-height: 30px;
@@ -1097,7 +1075,7 @@ main .footer footer .bottom .social-media img {
     display: none;
   }
   main .footer footer .top .navigation div:not(:first-child), main .footer footer .top .navigation div:not(:nth-child(5)) {
-    padding-left: 15vw;
+    padding-left: 30vw;
   }
   main .footer footer .top .navigation .opt img {
     width: 14px;
@@ -1128,4 +1106,6 @@ main .footer footer .bottom .social-media img {
   main .footer footer .bottom .social-media img {
     padding-left: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
