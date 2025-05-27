@@ -119,27 +119,31 @@ h1 {
 }
 
 h3 {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .presentation, .contact, .autre {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
-.autre p {
-  margin-top: 8px;
+.contact p:not(:first-of-type) {
+  margin-top: 15px;
+}
+
+.autre p:not(:first-of-type) {
+  margin-top: 15px;
 }
 
 .formation, .projet, .competence {
-  padding: 50px;
+  padding: 40px;
 }
 
-.formation p, .projet p {
+.formation p:not(:first-of-type), .projet p:not(:first-of-type) {
   padding-top: 25px;
 }
 
 .formation p:first-of-type, .projet p:first-of-type {
-  padding-top: 10px;
+  padding-top: 3px;
 }
 
 @media screen and (max-width: 2000px) {
@@ -265,10 +269,10 @@ h3 {
 @media screen and (max-width: 1200px) {
   .sideBar {
     padding: 45px;
-    width: 35%;
+    width: 30%;
   }
   .logo {
-    width: 175px;
+    width: 150px;
   }
   h1 {
     font-size: 50px;
@@ -279,10 +283,10 @@ h3 {
     font-size: 20px;
   }
   h2 {
-    font-size: 23px;
+    font-size: 25px;
   }
   p {
-    font-size: 15px;
+    font-size: 16px;
   }
   b {
     font-size: 17px;
@@ -294,10 +298,10 @@ h3 {
 @media screen and (max-width: 1000px) {
   .sideBar {
     padding: 45px;
-    width: 45%;
+    width: 35%;
   }
   .logo {
-    width: 150px;
+    width: 120px;
   }
   h1 {
     font-size: 40px;
@@ -308,16 +312,19 @@ h3 {
     font-size: 18px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
   p {
-    font-size: 15px;
+    font-size: 16px;
   }
   small {
     font-size: 12px;
   }
   b {
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .autre p {
+    margin-top: 2px;
   }
   .formation, .projet, .competence {
     padding: 45px;
@@ -333,10 +340,10 @@ h3 {
 @media screen and (max-width: 700px) {
   .sideBar {
     padding: 35px;
-    width: 45%;
+    width: 35%;
   }
   .logo {
-    width: 140px;
+    width: 120px;
   }
   h1 {
     font-size: 35px;
@@ -347,13 +354,13 @@ h3 {
     font-size: 16px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
   b {
-    font-size: 15px;
+    font-size: 18px;
   }
   .formation, .projet, .competence {
     padding: 35px;
@@ -369,7 +376,7 @@ h3 {
     width: 45%;
   }
   .logo {
-    width: 125px;
+    width: 110px;
   }
   h1 {
     font-size: 30px;
@@ -383,16 +390,16 @@ h3 {
     margin-top: 15px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 19px;
   }
   p {
-    font-size: 13px;
+    font-size: 16px;
   }
   small {
     font-size: 11px;
   }
   b {
-    font-size: 15px;
+    font-size: 17px;
   }
   .formation, .projet, .competence {
     padding: 32px;
@@ -406,10 +413,10 @@ h3 {
 @media screen and (max-width: 500px) {
   .sideBar {
     padding: 22px;
-    width: 45%;
+    width: 35%;
   }
   .logo {
-    width: 110px;
+    width: 100px;
   }
   h1 {
     font-size: 25px;
@@ -420,7 +427,7 @@ h3 {
     font-size: 15px;
   }
   .presentation, .contact, .autre {
-    margin-top: 15px;
+    margin-top: 25px;
   }
   h2 {
     font-size: 17px;
@@ -431,11 +438,11 @@ h3 {
     font-size: 13px;
   }
   b {
-    font-size: 14px;
+    font-size: 15px;
   }
   .formation, .projet, .competence {
     padding: 22px;
-    padding-bottom: 15px;
+    padding-bottom: 45px;
     padding-right: 15px;
   }
   .formation p, .projet p {

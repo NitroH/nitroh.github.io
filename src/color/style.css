@@ -87,6 +87,11 @@ ul {
   list-style: none none;
 }
 
+::-moz-selection {
+  color: #383838;
+  background: #f6f6f6;
+}
+
 ::selection {
   color: #383838;
   background: #f6f6f6;
@@ -1106,6 +1111,4 @@ main .footer footer .bottom .social-media img {
   main .footer footer .bottom .social-media img {
     padding-left: 15px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
